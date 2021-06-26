@@ -25,7 +25,7 @@ html
     padding: 40px 20px;
     /* To avoid the overlapping of the video and skills section, I added top padding by trial and error */
     background-color: rgba(208, 222, 226, 0.6);
-    background-image: linear-gradient(to bottom,rgba(208, 222, 226, 0.6), rgba(62,173,207,1));
+    background-image: linear-gradient(to bottom,rgba(208, 222, 226, 0.6), rgb(31, 118, 247, 0.83));
 }
 .skills .heading
 {
