@@ -36,9 +36,11 @@ header .text
     color: #fff;
     margin: 0px;
     padding: 0px;
+    display: flex;
+    flex-direction: column;
 }
 
-header .text h1
+header .text .span-1
 {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -47,7 +49,7 @@ header .text h1
     font-size: 25px;
     text-align: center;
 }
-header .text p
+header .text .span-2
 {
     padding: 0;
     letter-spacing: 1.5px;
@@ -55,6 +57,10 @@ header .text p
     font-weight: 650;
     text-transform: uppercase;
     text-align: center;
+}
+header .text .span-3
+{
+    font-size: 0px;
 }
 nav a
 {
@@ -107,11 +113,26 @@ header img
     {
         flex-direction: column;
         padding: 5px 10px;
-        margin: 0;
-        
+        margin: 0;   
+    }
+    header .text
+    {
+        display: inline;
+    }
+    header .text .span-1
+    {
+        font-size: 0px;
+        letter-spacing: normal;
+    }
+    header .text .span-2{
+        font-size: 0px;
+    }
+    header .text .span-3
+    {
+        font-size: 11px;
     }
     header nav{
-        padding: 20px 0px;
+        padding: 5px 0px;
         width: 100%;
     }
     header ul{
@@ -130,7 +151,7 @@ header img
         margin: 0;
     }
     header nav ul li a img{
-        width: 37px;
+        width: 25px;
         margin-right: 0;
         filter: invert(100%);
     }
@@ -215,53 +236,46 @@ header img
 /* C O N  T A C T    S E C T I O N */
 .contact
 {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 0px 40px;
     margin: 0;
     background: rgb(1, 14, 54);
+}
+.contact h2
+{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px 0px;
+    color: #fff;
+    letter-spacing: 3px;
 }
 .contact .content
 {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
 }
 .contact .content .contactInfo
 {
-    padding: 40px 20px;
-    background: rgb(1, 14, 54);
+    padding-top: 30px;
+    padding-left: 30px;
     border: 0px;
     color: #fff;
-    margin: 20px;
     transition: 0.5s;
-    border-radius: 20px;
-    width: 40% ;
 }
-.contact .content .contactInfo h2
-{
-    font-weight: 700;
-    text-transform: uppercase;
-    padding-bottom: 20px;
-    letter-spacing: 3px;
-}
-.contact .content .contactInfo li
+.contact .content .contactInfo
 {
     justify-content: left;
     list-style: none;
 }
-.contact .content .contactInfo li ul
+.contact .content .contactInfo ul li
 {
     padding: 5px;
-    letter-spacing: 1px;
-    font-weight: 500;
-}
-.contact .content .contactInfo li ul:hover
-{
-    color: #09c6f9;
+    letter-spacing: 1.5px;
+    list-style: none;
+    font-weight: 550;
     transition: 0.3s;
 }
-.contact .content .contactInfo li ul img
+.contact .content .contactInfo img
 {
     min-width: 25px;
     max-width: 40px;
@@ -271,42 +285,89 @@ header img
 }
 .contact .content .icons
 {
-    padding: 40px 20px;
-    background: rgb(1, 14, 54);
     border: 0px;
+    padding: 0px;
+    margin-right: 30px;
     color: #fff;
-    margin: 20px;
-    width: 5%;
-    text-align: center;
     transition: 0.5s;
-    border-radius: 10px;
-    justify-content: left;
+}
+.contact .content .icons ul
+{
+    display: flex;
+    flex-direction: column;
 }
 .contact .content .icons li
 {
     list-style: none;
-    justify-content: right;
     margin: 0;
+    padding: 3px;
 }
-.contact .content .icons li ul
+.contact .content .icons
 {
     padding: 5px;
 }
-.contact .content .icons li ul a img
+.contact .content .icons ul li a img
 {
     width: 35px;
     height: 35px;
     filter: grayscale(85%);
     transition: 0.4s;
-    /* The icon will be black and white */
 }
-.contact .content .icons li ul a img:hover
+/* Seperate media query for hover effects */
+@media screen and (min-width: 851px)
 {
-    filter: grayscale(0%);
-    /* To make the icon colourful when hovering over it */
-    transition: 0.5s;
-    transform: scale(1.1, 1.1);
+    .contact .content .contactInfo ul li:hover
+    {
+        color: #09c6f9;
+        transition: 0.3s;
+        font-weight: 650px;
+    }
+    .contact .content .icons ul li a img:hover
+    {
+        filter: grayscale(0%);
+        /* To make the icon colourful when hovering over it */
+        transition: 0.5s;
+        transform: scale(1.1, 1.1);
+    }
 }
-
-/* -  -  - */
-
+@media (max-width: 850px)
+{
+    .contact
+    {
+        padding: 0px 40px;
+    }
+    .contact .content
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact .content .icons
+    {
+        margin: 30px 10% 50px 10%;
+    }
+    .contact .content .icons ul
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .contact .content .contactInfo ul li
+    {
+        letter-spacing: 0px;
+    }
+    .contact .content .contactInfo
+    {
+        padding-left: 0px;
+    }
+}
+@media (max-width: 550px)
+{
+    .contact
+    {
+        padding: 0px 5px;
+    }
+    .contact .content .icons
+    {
+        margin: 30px 5% 50px 5%;
+    }
+}
