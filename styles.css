@@ -359,7 +359,13 @@ header img
     {
         padding-left: 0px;
     }
+    .contact .content .icons ul li a img
+    {
+        filter: grayscale(0%);
+    }
 }
+
+/* For very smaller screens */
 @media (max-width: 550px)
 {
     .contact
@@ -369,5 +375,9 @@ header img
     .contact .content .icons
     {
         margin: 30px 5% 50px 5%;
+    }
+    .contact .content .icons ul li a img
+    {
+        filter: grayscale(0%);
     }
 }
