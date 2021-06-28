@@ -24,13 +24,12 @@ header
     position: fixed;
     /* position fixed is keeping the nav bar on the top of the website */
     width: 100%;
-    background-color: #0033FF;
+    background-color: #001463;
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* This will align the items to the center in Y-axis (when flex direction is default (flex-direction: row)) */
     padding: 3px 30px; /* If the padding has two values, 1st one is for top and bottom, 2nd one for left and right */
-    border-bottom: 1px solid black;
 }
 header .text
 {
@@ -41,6 +40,7 @@ header .text
 
 header .text h1
 {
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 4px;
     font-weight: 650;
@@ -49,9 +49,10 @@ header .text h1
 }
 header .text p
 {
-    letter-spacing: 1px;
-    font-size: 13px;
-    font-weight: 550;
+    padding: 0;
+    letter-spacing: 1.5px;
+    font-size: 10px;
+    font-weight: 650;
     text-transform: uppercase;
     text-align: center;
 }
@@ -65,6 +66,9 @@ nav a
     text-decoration: none;
     letter-spacing: 0.5px;
     padding: 2px 10px;
+    border-radius: 15px;
+    border: 2px solid #214dff;
+    background-color: #2953ff;
 }
 header nav ul
 {
@@ -81,26 +85,62 @@ header nav ul li
 header nav ul li a:hover
 {
     color: #0000CC;
-    border: 1px solid white;
+    border: 1px solid #eee;
     transition: 0.1s;
     border-radius: 15px;
     margin: 0;
-    background-color: white;
+    background-color: #eee;
     /* When hovering over the links in nav bar, it will turn black */
+}
+
+header img
+{
+    width: 20px;
+    transform: translateY(4px);
+    margin-right: 5px;
+    filter: invert(20%);
+    
 }
 
 @media screen and (max-width: 850px){
     header
     {
         flex-direction: column;
-        padding-top: 15px;
-    }
-    header nav{
-        padding-top: 20px;
+        padding: 5px 10px;
+        margin: 0;
         
     }
-
-
+    header nav{
+        padding: 20px 0px;
+        width: 100%;
+    }
+    header ul{
+        justify-content: space-evenly;
+    }
+    header nav ul li{
+        padding-left: 0;
+    }
+    header nav ul li a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 108px;
+        margin: 0;
+    }
+    header nav ul li a img{
+        width: 37px;
+        margin-right: 0;
+        filter: invert(100%);
+    }
+    header nav ul li a span{
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        padding-top: 7px ;
+    }
+    
 }
 
 /* 3. S K I L L S    S E C T I O N*/
@@ -111,8 +151,8 @@ header nav ul li a:hover
     margin: 0;
     padding: 40px 20px;
     /* To avoid the overlapping of the video and skills section, I added top padding by trial and error */
-    background-color: #fff;
-    /* background-image: linear-gradient(to bottom,rgba(208, 222, 226, 0.6), rgb(31, 118, 247, 0.83)); */
+    background-color:#b8c6db;
+    background-image: linear-gradient(-45deg,#b3bec4, #63a4ff);
 }
 .skills .heading
 {
@@ -121,7 +161,7 @@ header nav ul li a:hover
 }
 .skills .heading h2
 {
-    color: rgba(0, 33, 255, 1);
+    color: rgb(7, 26, 153);
     text-transform: uppercase;
     text-align: center;
     border: 1px solid #000;
@@ -168,11 +208,4 @@ header nav ul li a:hover
     font-weight: 600;
     letter-spacing: 2px;
     margin-bottom: 10px;
-}
-@media (max-width: 500px){
-    .skills
-    {
-        background-color: #009ffd;
-        /* background-image: linear-gradient(to bottom,rgba(68, 83, 87, 0.6), rgba(8, 15, 154, 0.83)); */
-    }
 }
