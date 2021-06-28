@@ -92,6 +92,7 @@ header nav ul li a:hover
 {
     color: #fff;
     border: 1px solid #001463;
+    /*  */
     transition: 0.1s;
     border-radius: 15px;
     margin: 0;
