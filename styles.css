@@ -125,7 +125,8 @@ header img
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-width: 108px;
+        max-width: 95px;
+        min-width: 85px;
         margin: 0;
     }
     header nav ul li a img{
@@ -134,11 +135,11 @@ header img
         filter: invert(100%);
     }
     header nav ul li a span{
-        font-size: 10px;
+        font-size: 7px;
         font-weight: 800;
         letter-spacing: 0.5px;
         text-transform: uppercase;
-        padding-top: 7px ;
+        padding-top: 8px ;
     }
     
 }
