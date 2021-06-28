@@ -90,12 +90,12 @@ header nav ul li
 }
 header nav ul li a:hover
 {
-    color: #0000CC;
-    border: 1px solid #eee;
+    color: #fff;
+    border: 1px solid #001463;
     transition: 0.1s;
     border-radius: 15px;
     margin: 0;
-    background-color: #eee;
+    background-color: #001463;
     /* When hovering over the links in nav bar, it will turn black */
 }
 
