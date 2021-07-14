@@ -236,6 +236,7 @@ header img
 .skills .content .skillsBx p
 {
     font-size: 0.8rem;
+    text-align: justify;
 }
 
 @media (max-width: 550px)
@@ -250,7 +251,8 @@ header img
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding: 5px;
+        padding: 0px;
+        margin: 10px 0px;
         width: 100%;
         background: #2a2a72;
         background-image: linear-gradient(to bottom, #009ffd, #02005e);
@@ -269,16 +271,16 @@ header img
         background: #02005e;
     } */
 
-    /* .skills .content .skillsBx .skills_text
+    .skills .content .skillsBx .skills_text
     {
-        eewweew
-    } */
+        margin: 10px;
+    }
     .skills .content .skillsBx img
     {
-        width: 70px;
-        height: 70px;
-        margin: 0;
-        padding: 5px;
+        width: 60px;
+        height: 60px;
+        margin: 0px;
+        padding: 0px;
     }
     .skills .content .skillsBx h2
     {
@@ -289,7 +291,10 @@ header img
     }
     .skills .content .skillsBx p
     {
-        font-size: 0.7rem;
+        margin: 10px;
+        font-size: 0.6rem;
+        text-align: justify;
+        letter-spacing: 0.4px;
     }
 }
 
