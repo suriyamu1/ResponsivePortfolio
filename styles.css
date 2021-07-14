@@ -8,6 +8,7 @@
     font-family: 'Poppins', sans-serif, Helvetica;
     box-sizing: border-box;
     /* border-box is to include the padding and border are included in the width and height */
+    font-size: 20px;
 }
 html
 {
@@ -105,7 +106,7 @@ header img
     width: 20px;
     transform: translateY(4px);
     margin-right: 5px;
-    filter: invert(20%);
+    filter: invert(100%);
     
 }
 
@@ -173,13 +174,12 @@ header img
 {
     margin: 0;
     padding: 40px 20px;
-    /* To avoid the overlapping of the video and skills section, I added top padding by trial and error */
     background-color:#b8c6db;
     background-image: linear-gradient(-45deg,#b3bec4, #63a4ff);
 }
 .skills .heading
 {
-    margin-top: 0px;
+    margin-top: 100px;
     margin-bottom: 50px;   
 }
 .skills .heading h2
@@ -187,8 +187,7 @@ header img
     color: rgb(7, 26, 153);
     text-transform: uppercase;
     text-align: center;
-    border: 1px solid #000;
-    font-size: 40px;
+    font-size: 2rem;
     letter-spacing: 3px;
     font-weight: 900;
 }
@@ -196,9 +195,8 @@ header img
 {
     display: flex;
     justify-content: center;
-    border: 1px solid #000;
     flex-wrap: wrap;
-    /* I dont know what flex-wrap does */
+    /*flex wrap does half of the work to make this section responsive */
 }
 .skills .content .skillsBx
 {
@@ -207,13 +205,12 @@ header img
     background-image: linear-gradient(to bottom, #009ffd, #02005e);
     color: #fff; /* font-colour is white */
     margin: 20px;
-    max-width: 340px;
-    max-height: 360px;
+    max-width: 345px;
+    max-height: 350px;
     text-align: center;
     transition: 0.8s;
     /* for nicer animation effect */
-    border-radius: 20px;
-    /* box-shadow: 50px #0000CC; */
+    border-radius: 30px;
 }
 .skills .content .skillsBx:hover
 {
@@ -221,18 +218,80 @@ header img
 }
 .skills .content .skillsBx img
 {
-    max-width: 100px;
     max-height: 100px;
     margin-bottom: 10px;
 }
+/* .skills .content .skillsBx .skills_text
+{
+    This section is to use display flex for mobile screens
+    /* h2 and p comes inside this section
+} */
 .skills .content .skillsBx h2
 {
-    font-size: 20px;
+    font-size: 1.1rem;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 0.1rem;
     margin-bottom: 10px;
 }
+.skills .content .skillsBx p
+{
+    font-size: 0.8rem;
+}
 
+@media (max-width: 550px)
+{
+
+    .skills .content
+    {
+        padding: 0px;
+    }
+    .skills .content .skillsBx
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 5px;
+        width: 100%;
+        background: #2a2a72;
+        background-image: linear-gradient(to bottom, #009ffd, #02005e);
+        color: #fff; /* font-colour is white */
+        min-width: 350px;
+        text-align: center;
+        transition: 0.8s;
+        border-radius: 17px;
+        align-items: center;
+        
+        /* for nicer animation effect */
+        /* box-shadow: 50px #0000CC; */
+    }
+    /* .skills .content .skillsBx:hover
+    {
+        background: #02005e;
+    } */
+
+    /* .skills .content .skillsBx .skills_text
+    {
+        eewweew
+    } */
+    .skills .content .skillsBx img
+    {
+        width: 70px;
+        height: 70px;
+        margin: 0;
+        padding: 5px;
+    }
+    .skills .content .skillsBx h2
+    {
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+        margin-bottom: 10px;
+    }
+    .skills .content .skillsBx p
+    {
+        font-size: 0.7rem;
+    }
+}
 
 /* C O N  T A C T    S E C T I O N */
 .contact
