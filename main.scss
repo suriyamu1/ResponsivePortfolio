@@ -1,0 +1,163 @@
+// All SASS variables are declared here
+$blue: blue;
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    //border-box is to include the padding and border are included in the width and height
+    font-size: 20px;
+}
+html
+{
+    scroll-behavior: smooth;
+    // smooth scrolling effects for navigation bar
+}
+
+// S K I L L S   S E C T I O N
+
+.skills{
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: purple;
+
+    h4{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: white;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        .skills_box{
+            margin: 15px;
+            padding: 15px;
+            display: grid;
+            // grid-template-rows: 80px 15px 60px;
+            grid-template-areas: 
+            "i i i i"
+            "t t t t"
+            "s s s s";
+            border: 1px solid black;
+            background-color: sienna;
+            max-width: 300px;
+            min-width: 270px;
+            border-radius: 20px;
+    
+            .image{
+                margin: 5px;
+                padding: 0px;
+                grid-area: i;
+                // border: 1px solid black;
+                // background-color:yellowgreen;
+                text-align: center;
+                //text-align: center will make one line text and images to come to the center of the div element
+
+                img{
+                    max-width: 85px;
+                }
+            }
+    
+            .title{
+                margin: 5px 0px 0px 0px;
+                padding: 0px;
+                grid-area: t;
+                // border: 1px solid black;
+                // background-color: teal;
+                text-align: center;
+                //text-align: center will make one line text and images to come to the center of the div element
+                font-size: 1rem;
+                font-weight: 600;
+                letter-spacing: 2px;
+            }
+            
+            .short_text
+            {
+                margin: 5px 0px 0px 0px;
+                padding: 0px;
+                grid-area: s;
+                // border: 1px solid black;
+                // background-color: burlywood;
+                font-size: 0.75rem;
+                font-weight: 500;
+                text-align: justify;
+    
+            }
+        }
+    }
+}
+
+@media (max-width: 720px)
+{
+    .skills{
+        margin: 10px 0px; //top 10px and sides 0px
+        padding: 15px;
+        // border: 1px solid black;
+        background-color: rgb(0, 19, 128);
+        
+        .container{
+    
+            .skills_box{
+                margin: 10px;
+                padding: 10px;
+                display: grid;
+                // grid-template-rows: 80px 15px 60px;
+                grid-template-areas: 
+                "t t t t"
+                "s s s i"
+                "s s s i";
+                border: 1px solid black;
+                background-color: sienna;
+                min-width: 90%;
+                border-radius: 10px;
+        
+                .image{
+                    margin: 10px;
+                    padding: 0px;
+                    grid-area: i;
+                    // border: 1px solid black;
+                    // background-color:yellowgreen;
+                    text-align: center;
+                    //text-align: center will make one line text and images to come to the center of the div element
+    
+                    img{
+                        max-width: 85px;
+                    }
+                }
+        
+                .title{
+                    margin:0px;
+                    padding: 0px;
+                    grid-area: t;
+                    // border: 1px solid black;
+                    // background-color: teal;
+                    text-align: center;
+                    //text-align: center will make one line text and images to come to the center of the div element
+                    font-size: 1rem;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                }
+                
+                .short_text
+                {
+                    margin: 3px;
+                    padding: 0px;
+                    grid-area: s;
+                    // border: 1px solid black;
+                    // background-color: burlywood;
+                    font-size: 0.75rem;
+                    font-weight: 500;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
