@@ -18,12 +18,14 @@ html
 // S K I L L S   S E C T I O N
 
 .skills{
-    margin: 10px;
-    padding: 20px;
+    padding: 0% 8%;
+    margin: 0px;
     border: 1px solid black;
-    background-color: purple;
+    background-image: linear-gradient(to right, #4f00e3, #4919e8, 
+    #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6,
+    #613bf1, #7136ec, #7e31e7, #8a2be2);
 
-    h4{
+    h1{
         text-align: center;
         font-size: 1.5rem;
         font-weight: 700;
@@ -36,21 +38,37 @@ html
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        margin: 0px 5%;
 
         .skills_box{
-            margin: 15px;
-            padding: 15px;
+            margin: 25px 15px;
+            padding: 25px;
             display: grid;
-            // grid-template-rows: 80px 15px 60px;
+            grid-template: auto auto auto / 1fr 1fr 1fr 1fr;
             grid-template-areas: 
-            "i i i i"
-            "t t t t"
-            "s s s s";
-            border: 1px solid black;
-            background-color: sienna;
+            "i i i i i"
+            "t t t t t"
+            "s s s s s";
+            // border: 1px solid black;
+            background-color: #eee;
             max-width: 300px;
             min-width: 270px;
             border-radius: 20px;
+            transition: 1.5s;
+
+            //glassmorphism
+            background: rgba( 253, 253, 255, 0.45 );
+            box-shadow: 0 8px 32px 0 rgba(31, 42, 194, 0.37);
+            backdrop-filter: blur(2.5px);
+            -webkit-backdrop-filter: blur(2.5px);
+            border-radius: 25px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+            &:hover{
+                background-color: #ddd;
+                transition: 0.3s;
+                cursor: pointer;
+            }
     
             .image{
                 margin: 5px;
@@ -111,11 +129,16 @@ html
                 display: grid;
                 // grid-template-rows: 80px 15px 60px;
                 grid-template-areas: 
-                "t t t t"
-                "s s s i"
-                "s s s i";
-                border: 1px solid black;
-                background-color: sienna;
+                "t t t t t"
+                "s s s s i"
+                "s s s s i";
+                background: rgba(255, 255, 255, .7);
+                background: rgba( 253, 253, 255, 0.35 );
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                backdrop-filter: blur(2.5px);
+                -webkit-backdrop-filter: blur(2.5px);
+                border-radius: 10px;
+                border: 1px solid rgba( 255, 255, 255, 0.18 );
                 min-width: 90%;
                 border-radius: 10px;
         
@@ -166,3 +189,4 @@ html
         }
     }
 }
+
