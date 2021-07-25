@@ -127,9 +127,12 @@ html
                     // background-color:yellowgreen;
                     text-align: center;
                     //text-align: center will make one line text and images to come to the center of the div element
+                    display: flex;
     
                     img{
                         max-width: 85px;
+                        align-items: center;
+                        justify-content: center;
                     }
                 }
         
@@ -155,7 +158,8 @@ html
                     // background-color: burlywood;
                     font-size: 0.75rem;
                     font-weight: 500;
-                    text-align: left;
+                    text-align: justify;
+                    justify-content: center;
                 }
             }
         }
