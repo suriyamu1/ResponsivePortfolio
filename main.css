@@ -115,9 +115,9 @@ html {
     -ms-grid-column: 4;
     grid-area: i;
     text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .skills .container .skills_box .image img {
     max-width: 85px;
@@ -151,9 +151,9 @@ html {
     font-size: 0.75rem;
     font-weight: 500;
     text-align: justify;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
