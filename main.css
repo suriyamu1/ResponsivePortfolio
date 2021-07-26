@@ -12,9 +12,9 @@ html {
 }
 
 .skills {
-  padding: 0% 8%;
+  min-height: 100vh;
+  padding: 0% 4%;
   margin: 0px;
-  border: 1px solid black;
   background-image: -webkit-gradient(linear, left top, right top, from(#4f00e3), color-stop(#4919e8), color-stop(#4126ed), color-stop(#3931f2), color-stop(#303af6), color-stop(#3b3cf6), color-stop(#453df6), color-stop(#4d3ff6), color-stop(#613bf1), color-stop(#7136ec), color-stop(#7e31e7), to(#8a2be2));
   background-image: linear-gradient(to right, #4f00e3, #4919e8, #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6, #613bf1, #7136ec, #7e31e7, #8a2be2);
 }
@@ -26,6 +26,7 @@ html {
   color: white;
   letter-spacing: 1px;
   text-transform: uppercase;
+  padding: 40px 0px;
 }
 
 .skills .container {
@@ -49,9 +50,8 @@ html {
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template: auto auto auto / 1fr 1fr 1fr 1fr;
       grid-template-areas: "i i i i i" "t t t t t" "s s s s s";
-  background-color: #eee;
-  max-width: 300px;
-  min-width: 270px;
+  background-color: rgba(245, 245, 245, 0.2);
+  width: 270px;
   border-radius: 20px;
   -webkit-transition: 1.5s;
   transition: 1.5s;
@@ -59,13 +59,13 @@ html {
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 42, 194, 0.37);
           box-shadow: 0 8px 32px 0 rgba(31, 42, 194, 0.37);
   backdrop-filter: blur(2.5px);
-  -webkit-backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(0.45px);
   border-radius: 25px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .skills .container .skills_box:hover {
-  background-color: #ddd;
+  background-color: rgba(255, 255, 255, 0.7);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
@@ -110,9 +110,15 @@ html {
   text-align: justify;
 }
 
+@media (max-width: 1200px) {
+  .skills {
+    padding: 0% 0%;
+  }
+}
+
 @media (max-width: 720px) {
   .skills {
-    margin: 10px 0px;
+    margin: 0px;
     padding: 15px;
     background-color: #001380;
   }
@@ -130,7 +136,7 @@ html {
     -webkit-backdrop-filter: blur(2.5px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    min-width: 90%;
+    width: 95%;
     border-radius: 10px;
   }
   .skills .container .skills_box .image {
