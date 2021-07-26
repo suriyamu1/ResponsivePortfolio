@@ -122,6 +122,9 @@ html {
     padding: 15px;
     background-color: #001380;
   }
+  .skills h1 {
+    padding: 20px 0px;
+  }
   .skills .container .skills_box {
     margin: 10px;
     padding: 10px;
