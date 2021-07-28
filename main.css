@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 20px;
@@ -13,7 +13,7 @@ html {
 
 .skills {
   min-height: 100vh;
-  padding: 0% 4%;
+  padding: 0% 8%;
   margin: 0px;
   background-image: -webkit-gradient(linear, left top, right top, from(#4f00e3), color-stop(#4919e8), color-stop(#4126ed), color-stop(#3931f2), color-stop(#303af6), color-stop(#3b3cf6), color-stop(#453df6), color-stop(#4d3ff6), color-stop(#613bf1), color-stop(#7136ec), color-stop(#7e31e7), to(#8a2be2));
   background-image: linear-gradient(to right, #4f00e3, #4919e8, #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6, #613bf1, #7136ec, #7e31e7, #8a2be2);
@@ -88,9 +88,8 @@ html {
 .skills .container .skills_box .title {
   margin: 5px 0px 0px 0px;
   padding: 0px;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: t;
   text-align: center;
   font-size: 1rem;
@@ -167,8 +166,7 @@ html {
     margin: 0px;
     padding: 0px;
     -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 5;
+    -ms-grid-column: 3;
     grid-area: t;
     text-align: center;
     font-size: 1rem;
@@ -189,6 +187,202 @@ html {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+}
+
+.accomp {
+  background-image: -webkit-gradient(linear, left top, right top, from(#4f00e3), color-stop(#4919e8), color-stop(#4126ed), color-stop(#3931f2), color-stop(#303af6), color-stop(#3b3cf6), color-stop(#453df6), color-stop(#4d3ff6), color-stop(#613bf1), color-stop(#7136ec), color-stop(#7e31e7), to(#8a2be2));
+  background-image: linear-gradient(to right, #4f00e3, #4919e8, #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6, #613bf1, #7136ec, #7e31e7, #8a2be2);
+  margin: 0px;
+  min-height: 100vh;
+}
+
+.accomp h1 {
+  text-align: center;
+  margin: 0px;
+  padding: 30px 2% 0px 2%;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.accomp .main_container {
+  margin: 0% 15%;
+  padding: 0% 2% 2% 2%;
+}
+
+.accomp .main_container h3 {
+  font-size: 1rem;
+  font-weight: 900;
+  margin: 45px 0px 10px 0px;
+}
+
+.accomp .main_container .container {
+  margin: 0% 5%;
+  padding: 0%;
+}
+
+.accomp .main_container .container .sub_container {
+  margin: 25px 0px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 5px;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -ms-grid-columns: 0.75fr 0.75fr 6.5fr 1fr;
+      grid-template-columns: 0.75fr 0.75fr 6.5fr 1fr;
+      grid-template-areas: "i1 i2 t l";
+  border-radius: 15px;
+  -webkit-transition: all ease 1.5s;
+  transition: all ease 1.5s;
+  background: rgba(255, 255, 255, 0.45);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.accomp .main_container .container .sub_container:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.accomp .main_container .container .sub_container .image1 {
+  text-align: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: i1;
+  font-size: 0.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.accomp .main_container .container .sub_container .image1 img {
+  width: 50px;
+  margin: 5px;
+}
+
+.accomp .main_container .container .sub_container .image2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: i2;
+  font-size: 0.5rem;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.accomp .main_container .container .sub_container .image2 img {
+  width: 50px;
+  margin: 5px;
+}
+
+.accomp .main_container .container .sub_container .text {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: t;
+  font-size: 0.8rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  line-height: 1rem;
+}
+
+.accomp .main_container .container .sub_container .text .h {
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.accomp .main_container .container .sub_container .text .p {
+  font-size: 0.65rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.accomp .main_container .container .sub_container .link {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: l;
+  font-size: 0.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.accomp .main_container .container .sub_container .link a img {
+  width: 30px;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.accomp .main_container .container .sub_container .link a img:hover {
+  -webkit-transform: translateX(8px);
+          transform: translateX(8px);
+}
+
+@media (max-width: 1000px) {
+  .accomp {
+    background-color: pink;
+  }
+  .accomp .main_container {
+    margin: 0% 3%;
+  }
+  .accomp .main_container .container1 {
+    margin: 0% 0% 0% 4%;
+  }
+}
+
+@media (max-width: 800px) {
+  .accomp {
+    background-color: lightblue;
+  }
+  .accomp .main_container .container {
+    margin: 0% 0% 0% 1%;
+  }
+  .accomp .main_container .container .sub_container .text .h {
+    font-family: san-serif;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: brown;
+  }
+  .accomp .main_container .container .sub_container .text .p {
+    font-size: 0.6rem;
+    letter-spacing: normal;
+    font-weight: 600px;
+  }
+}
+
+@media (max-width: 500px) {
+  .accomp {
+    background-color: lightgreen;
+  }
+  .accomp .main_container .container {
+    margin: 0;
+  }
+  .accomp .main_container .container .sub_container {
+    padding: 14px 6px;
+    margin: 10px 0px;
+  }
+  .accomp .main_container .container .sub_container .image1 img, .accomp .main_container .container .sub_container .image2 img {
+    width: 35px;
+  }
+  .accomp .main_container .container .sub_container .text {
+    line-height: normal;
+  }
+  .accomp .main_container .container .sub_container .text .h {
+    letter-spacing: normal;
+  }
+  .accomp .main_container .container .sub_container .link img {
+    width: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */

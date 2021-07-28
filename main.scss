@@ -1,10 +1,7 @@
-// All SASS variables are declared here
-$blue: blue;
-
 *{
     margin: 0;
     padding:0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: serif;
     box-sizing: border-box;
     //border-box is to include the padding and border are included in the width and height
     font-size: 20px;
@@ -22,7 +19,7 @@ html
     //1 vh = (1/100)(height of viewport)
     //So 100vh == height of the entire screen
     //Similarly 1vw = (1/100)(width of viewport)
-    padding: 0% 4%;
+    padding: 0% 8%;
     margin: 0px;
     // border: 1px solid black;
     background-image: linear-gradient(to right, #4f00e3, #4919e8, 
@@ -204,3 +201,209 @@ html
     }
 }
 
+
+// A C C O M P L I S H M E N T S   S E C T I O N
+.accomp{
+    // border: 1px solid black;
+    background-image: linear-gradient(to right, #4f00e3, #4919e8, 
+    #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6,
+    #613bf1, #7136ec, #7e31e7, #8a2be2);
+
+    margin: 0px;
+    min-height: 100vh;
+
+    h1{
+        // border: 1px solid black;
+        text-align: center;
+        margin: 0px;
+        padding: 30px 2% 0px 2%;
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+    .main_container{
+        // border: 1px solid black;
+        margin: 0% 15%;
+        padding: 0% 2% 2% 2%;
+
+        h3{
+            // border: 1px solid black;
+            font-size: 1rem;
+            font-weight: 900;
+            margin: 45px 0px 10px 0px;
+        }
+
+        .container
+        {
+            // border: 1px solid black;
+            margin: 0% 5%;
+            padding: 0%;
+
+            .sub_container{
+                // border: 1px solid black;
+                margin: 25px 0px;
+                display: grid;
+                grid-gap: 5px;
+                grid-template-rows: auto;
+                grid-template-columns: 0.75fr 0.75fr 6.5fr 1fr;
+                grid-template-areas: "i1 i2 t l";
+                border-radius: 15px;
+                transition: all ease 1.5s;
+
+                //Glassmorphism (for sub containers)
+                background: rgba( 255, 255, 255, 0.45 );
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                backdrop-filter: blur( 0.0px );
+                -webkit-backdrop-filter: blur( 0.0px );
+                border-radius: 10px;
+                border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+                &:hover{
+                    transform: scale(1.02);
+                    transition: all ease 1s;
+                }
+
+                .image1{
+                    // border: 1px solid black;
+                    text-align: center;
+                    grid-area: i1;
+                    font-size: 0.5rem;
+                    align-self: center;
+
+                    img{
+                        width: 50px;
+                        margin: 5px;
+                    }
+                }
+                .image2{
+                    // border: 1px solid black;
+                    grid-area: i2;
+                    font-size: 0.5rem;
+                    text-align: center;
+                    align-self: center;
+
+                    img{
+                        width: 50px;
+                        margin: 5px;
+                    }
+                }
+                .text
+                {
+                    // border: 1px solid black;
+                    grid-area: t;
+                    font-size: 0.8rem;
+                    align-self: center;
+                    line-height: 1rem;
+
+                    .h{
+                        font-size: 0.9rem;
+                        font-weight: 800;
+                        letter-spacing: 2px;
+                    }
+                    .p{
+                        font-size: 0.65rem;
+                        font-weight: 300;
+                        letter-spacing: 0.5px;
+                    }
+                }
+                .link
+                {
+                    grid-area: l;
+                    font-size: 0.5rem;
+                    align-self: center;
+                    justify-self: center;
+                    
+                    a{
+                        img{
+                            width: 30px;
+                            transition: all ease 1s;
+                        }
+                        img:hover
+                        {
+                            transform: translateX(8px);
+                            // If the user hovers over the arrow, it will slide to the right by 8px
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px)
+{
+    .accomp{
+        background-color: pink;
+        .main_container{
+            margin: 0% 3%;
+            .container1{
+                margin: 0% 0% 0% 4%;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px)
+{
+    .accomp{
+        background-color: lightblue;
+        .main_container{
+            .container{
+                margin: 0% 0% 0% 1%;
+                .sub_container{
+                    .text{
+                        .h{
+                            font-family: san-serif;
+                            font-size: 0.8rem;
+                            font-weight: bolder;
+                            letter-spacing: 1px;
+                            color: brown;
+                        }
+                        .p{
+                            font-size: 0.6rem;
+                            letter-spacing: normal;
+                            font-weight: 600px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px)
+{
+    .accomp{
+        background-color: lightgreen;
+        .main_container{
+            .container{
+                margin: 0;
+                .sub_container{
+                    padding: 14px 6px;
+                    margin: 10px 0px;
+
+
+
+                    .image1, .image2{
+                        img{
+                            width: 35px;
+                        }
+                    }
+
+                    .text{
+                        line-height: normal;
+
+                        .h{
+                            letter-spacing: normal;
+                        }
+                    }
+                    .link{
+                        img{
+                            width: 20px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
