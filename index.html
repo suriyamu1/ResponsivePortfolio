@@ -3,166 +3,236 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="main.css">
-        <title>Responsive skills section</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Enoda Website</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- To use media query meta viewport is mandatory -->
         <!-- Media queries will not work without meta viewport -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <!-- These two links are for the responsive nav bar -->
     </head>
 
     <body>
 
-    <!-- 3. S K I L L S    S E C T I O N -->
-    <section class="skills">
-        
-        <h1> MY SKILLS</h1>
-        <div class="container">
-            <div class="skills_box">
-                <div class="image"><img src="skills_section/py3_img.png" alt=""></div>
-                <div class="title">Python</div>
-                <div class="short_text">File I/O, Sorting, Working with structured data (Dictionaries, tuples, lists) 
-                </div>
-            </div>
+        <!-- 1. N A V I G A T I O N   B A R -->
+        <section class="navi">
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
 
-            <div class="skills_box">
-                <div class="image"><img src="skills_section/matlab_img.png" alt=""></div>
-                <div class="title">MATLAB</div>
-                <div class="short_text">Matrix Operations, User defined functions, 2D and 3D Plotting, File I/O, Working with images
-                </div>
-            </div>
+                    <i class="fas fa-bars"></i>
+                </label>
 
-            <div class="skills_box">
-                <div class="image"><img src="skills_section/c_img.png" alt=""></div>
-                <div class="title">C</div>
-                <div class="short_text">File I/O, Recursion, Memory management, Error Handling
-                </div>
-            </div>
+                <label class="logo">DesignS</label>
+                <ul>
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Accomplishments">Accomplishments</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
 
-            <div class="skills_box">
-                <div class="image"><img src="skills_section/cpp_img.png" alt=""></div>
-                <div class="title">C++</div>
-                <div class="short_text">Classes and Objects, Inheritance, Polymorphism, Overloading, Exception handling
-                </div>
-            </div>
+        <!-- 2. INTRO SECTION -->
+        <section class="empty">
+            SECTION - 1
+        </section>
 
-            <div class="skills_box">
-                <div class="image"><img src="skills_section/css_img.png" alt=""></div>
-                <div class="title">CSS</div>
-                <div class="short_text">
-                CSS Box Model, CSS flexbox, CSS Grid, Responsive Design, UI Design.
-                </div>
-            </div>
 
-            <div class="skills_box">
-                <div class="image"><img src="skills_section/excel_img.png" alt=""></div>
-                <div class="title">Microsoft Excel</div>
-                <div class="short_text">Data Validation, Pivot Tables, Lookups, Macros, Data cleaning, Building dashboards
-                </div>
-            </div>
-        </div> 
-        
-    </section>
-
-    <!-- 4. A C C O M P L I S H M E N T S   S E C T I O N -->
-    <section class="accomp">
-        <h1>MY ACCOMPLISHMENTS</h1>
-        <div class="main_container">
-            <h3>CERTIFICATIONS</h3>
+        <!-- 3. S K I L L S    S E C T I O N -->
+        <section class="skills">
+            <a name="Skills"></a>
+            
+            <h1> MY SKILLS</h1>
             <div class="container">
-
-                <!-- 1st certificate -->
-                <div class="sub_container">
-                    <div class="image1">
-                        <img src="accomp_section/Hacker_Rank_logo.png" alt="">
-                    </div>
-                    <div class="image2">
-                        <img src="accomp_section/py3_img.png" alt="">
-                    </div>
-                    <div class="text">
-                        <span class="h">Python (Basic) Certificate</span>
-                        <span class="p"><br/>Assessment Test conducted by HackerRank.</span>
-                    </div>
-                    <div class="link">
-                        <a href="https://matlab.mathworks.com/" target="_blank"><img src="accomp_section/right_arrow.png" alt=""></a>
+                <div class="skills_box">
+                    <div class="image"><img src="skills_section/py3_img.png" alt=""></div>
+                    <div class="title">Python</div>
+                    <div class="short_text">File I/O, Sorting, Working with structured data (Dictionaries, tuples, lists) 
                     </div>
                 </div>
 
-
-                <!-- 2nd certificate -->
-                <div class="sub_container">
-                    <div class="image1">
-                        <img src="accomp_section/coursera.png" alt="">
-                    </div>
-                    <div class="image2">
-                        <img src="accomp_section/py3_img.png" alt="">
-                    </div>
-                    <div class="text">
-                        <span class="h">Python Files, Functions and Dictionaries</span>
-                        <span class="p"><br/>Offered by University of Michigan in Coursera.</span>
-                    </div>
-                    <div class="link">
-                        <a href="https://matlab.mathworks.com/" target="_blank"><img src="accomp_section/right_arrow.png" alt=""></a>
+                <div class="skills_box">
+                    <div class="image"><img src="skills_section/matlab_img.png" alt=""></div>
+                    <div class="title">MATLAB</div>
+                    <div class="short_text">Matrix Operations, User defined functions, 2D and 3D Plotting, File I/O, Working with images
                     </div>
                 </div>
 
-                <!-- 3rd certificate -->
-                <div class="sub_container">
-                    <div class="image1">
-                        <img src="accomp_section/coursera.png" alt="">
-                    </div>
-                    <div class="image2">
-                        <img src="accomp_section/matlab_img.png" alt="">
-                    </div>
-                    <div class="text">
-                        <span class="h">Introduction to programming with MATLAB</span>
-                        <span class="p"><br/>Offered by Vanderbilt University in Coursera.</span>
-                    </div>
-                    <div class="link">
-                        <a href="https://matlab.mathworks.com/" target="_blank"><img src="accomp_section/right_arrow.png" alt=""></a>
+                <div class="skills_box">
+                    <div class="image"><img src="skills_section/c_img.png" alt=""></div>
+                    <div class="title">C</div>
+                    <div class="short_text">File I/O, Recursion, Memory management, Error Handling
                     </div>
                 </div>
 
-                <!-- 4th certificate -->
-                <div class="sub_container">
-                    <div class="image1">
-                        <img src="accomp_section/coursera.png" alt="">
+                <div class="skills_box">
+                    <div class="image"><img src="skills_section/cpp_img.png" alt=""></div>
+                    <div class="title">C++</div>
+                    <div class="short_text">Classes and Objects, Inheritance, Polymorphism, Overloading, Exception handling
                     </div>
-                    <div class="image2">
-                        <img src="accomp_section/excel_img.png" alt="">
+                </div>
+
+                <div class="skills_box">
+                    <div class="image"><img src="skills_section/css_img.png" alt=""></div>
+                    <div class="title">CSS</div>
+                    <div class="short_text">
+                    CSS Box Model, CSS flexbox, CSS Grid, Responsive Design, UI Design.
                     </div>
-                    <div class="text">
-                        <span class="h">Excel Skills for Business - Specialization</span>
-                        <span class="p"><br/>Offered by Macquarie University in Coursera.</span>
+                </div>
+
+                <div class="skills_box">
+                    <div class="image"><img src="skills_section/excel_img.png" alt=""></div>
+                    <div class="title">Microsoft Excel</div>
+                    <div class="short_text">Data Validation, Pivot Tables, Lookups, Macros, Data cleaning, Building dashboards
                     </div>
-                    <div class="link">
-                        <a href="https://matlab.mathworks.com/" target="_blank"><img src="accomp_section/right_arrow.png" alt=""></a>
+                </div>
+            </div> 
+            
+        </section>
+
+        <!-- 4. A C C O M P L I S H M E N T S   S E C T I O N -->
+        <section class="accomp" name="Accomplishments">
+            <a name="Accomplishments"></a>
+            
+            <h1>MY ACCOMPLISHMENTS</h1>
+            <div class="main_container">
+                <h3>CERTIFICATIONS</h3>
+                <div class="container">
+
+                    <!-- 1st certificate -->
+                    <div class="sub_container">
+                        <div class="image1">
+                            <img src="accomp_section/Hacker_Rank_logo.png" alt="">
+                        </div>
+                        <div class="image2">
+                            <img src="accomp_section/py3_img.png" alt="">
+                        </div>
+                        <div class="text">
+                            <span class="h">Python (Basic) Certificate</span>
+                            <span class="p"><br/>Assessment Test conducted by HackerRank.</span>
+                        </div>
+                        <div class="link">
+                            <a href="https://matlab.mathworks.com/" target="_blank"><img src="accomp_section/right_arrow.png" alt=""></a>
+                        </div>
                     </div>
+
+
+                    <!-- 2nd certificate -->
+                    <div class="sub_container">
+                        <div class="image1">
+                            <img src="accomp_section/coursera.png" alt="">
+                        </div>
+                        <div class="image2">
+                            <img src="accomp_section/py3_img.png" alt="">
+                        </div>
+                        <div class="text">
+                            <span class="h">Python Files, Functions and Dictionaries</span>
+                            <span class="p"><br/>Offered by University of Michigan in Coursera.</span>
+                        </div>
+                        <div class="link">
+                            <a href="https://matlab.mathworks.com/" target="_blank"><img src="accomp_section/right_arrow.png" alt=""></a>
+                        </div>
+                    </div>
+
+                    <!-- 3rd certificate -->
+                    <div class="sub_container">
+                        <div class="image1">
+                            <img src="accomp_section/coursera.png" alt="">
+                        </div>
+                        <div class="image2">
+                            <img src="accomp_section/matlab_img.png" alt="">
+                        </div>
+                        <div class="text">
+                            <span class="h">Introduction to programming with MATLAB</span>
+                            <span class="p"><br/>Offered by Vanderbilt University in Coursera.</span>
+                        </div>
+                        <div class="link">
+                            <a href="https://matlab.mathworks.com/" target="_blank"><img src="accomp_section/right_arrow.png" alt=""></a>
+                        </div>
+                    </div>
+
+                    <!-- 4th certificate -->
+                    <div class="sub_container">
+                        <div class="image1">
+                            <img src="accomp_section/coursera.png" alt="">
+                        </div>
+                        <div class="image2">
+                            <img src="accomp_section/excel_img.png" alt="">
+                        </div>
+                        <div class="text">
+                            <span class="h">Excel Skills for Business - Specialization</span>
+                            <span class="p"><br/>Offered by Macquarie University in Coursera.</span>
+                        </div>
+                        <div class="link">
+                            <a href="https://matlab.mathworks.com/" target="_blank"><img src="accomp_section/right_arrow.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <h3>CO-CURRICULAR ACTIVITIES</h3>
+                <div class="container">
+
+                    <!-- 1st Co-curricular Activity -->
+                    <div class="sub_container">
+                        <div class="image1">
+                            <img src="accomp_section/IEI_logo.png" alt="">
+                        </div>
+                        <div class="image2">
+                            <img src="accomp_section/TCE_logo.png" alt="">
+                        </div>
+                        <div class="text">
+                            <span class="h">IEI - Junior Coordinator</span>
+                            <span class="p"><br/>Serving as the Junior Coordinator in IEI- Students Chapter (Electrical) at TCE</span>
+                        </div>
+                        <div class="link">
+                            <a href="https://matlab.mathworks.com/" target="_blank"><img src="accomp_section/right_arrow.png" alt=""></a>
+                        </div>
+                    </div>
+
+                    
+
                 </div>
             </div>
-            <h3>CO-CURRICAR ACTIVITIES</h3>
-            <div class="container">
+        </section>
 
-                <!-- 1st Co-curricular Activity -->
-                <div class="sub_container">
-                    <div class="image1">
-                        <img src="accomp_section/IEI_logo.png" alt="">
+        <!-- 5. CONTACT SECTION -->
+        <section class="contact" name="Contact">
+            <a name="Contact"></a>
+            <h1>CONTACT DETAILS</h1>
+            
+            <div class="main_container">
+                <div class="container1">
+
+                    <div class="info">
+                        <img src="contact_section/mail.png" alt="">
+                        <span>suriya.malarmurugesh@gmail.com</span>
                     </div>
-                    <div class="image2">
-                        <img src="accomp_section/TCE_logo.png" alt="">
+
+                    <div class="info">
+                        <img src="contact_section/phone.png" alt="">
+                        <span>+91 9626691889</span>
                     </div>
-                    <div class="text">
-                        <span class="h">IEI - Junior Coordinator</span>
-                        <span class="p"><br/>Serving as the Junior Coordinator in IEI- Students Chapter (Electrical) at TCE</span>
+
+                    <div class="info">
+                        <img src="contact_section/graduation_hat.png" alt="">
+                        <span>Thiagarajar College of Engineering,<br>Madurai</span>
                     </div>
-                    <div class="link">
-                        <a href="https://matlab.mathworks.com/" target="_blank"><img src="accomp_section/right_arrow.png" alt=""></a>
+
+                    <div class="info">
+                        <img src="contact_section/location_pointer.png" alt="">
+                        <span>Madurai, India</span>
                     </div>
                 </div>
 
-                
-
+                <div class="container2">
+                    <div class="link"><a href="https://www.linkedin.com/in/suriya-murugesan-profile" target="_blank"><img src="contact_section/linkedin_logo.png" alt=""></a></div>
+                    <div class="link"><a href="https://www.hackerrank.com/suriyamu1" target="_blank"><img src="contact_section/HackerRank_logo.png" alt=""></a></div>
+                    <div class="link"><a href="https://github.com/suriyamu1" target="_blank"><img src="contact_section/github_logo.png" alt=""></a></div>
+                    <div class="link"><a href="https://youtube.com/channel/UC_0j3F0ysMMP3FJD7SQZNSg" target="_blank"><img src="contact_section/youtube.png" alt=""></a></div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
     </body>    
 </html>
