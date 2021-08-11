@@ -1,3 +1,7 @@
+//FONTS
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@700&display=swap'); //Crimson Pro FOnt
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@351&display=swap'); //Rokkitt Font
+
 *{
     margin: 0;
     padding:0;
@@ -6,6 +10,7 @@
     //border-box is to include the padding and border are included in the width and height
     font-size: 20px;
 }
+
 html
 {
     scroll-behavior: smooth;
@@ -19,48 +24,54 @@ nav{
     position: fixed;
     z-index: 10;
     background-image: linear-gradient(to top, #1c075e, #20086b, #240979, #290a87, #2d0b95);
-    height: 80px;
+    height: 8vh;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 6%;
 }
 
-label.logo{
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
+nav .text h3{
+    color: whitesmoke;
+    font-size: 0.85rem;
+    letter-spacing: 6px;
+    text-align: center;
+}
+
+nav .text h6{
+    color: rgb(172, 172, 172);
+    font-size: 0.65rem;
+    letter-spacing: 3px;
+    text-align: center;
 }
 
 nav ul{
-    float: right;
-    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul li{
-    display: inline-block;
-    line-height: 80px;
+    list-style: none;
     margin: 0 5px;
 }
 
 nav ul li a{
     color: white;
-    font-size: 17px;
-    text-transform: uppercase;
-    padding: 7px 13px;
-    border-radius: 3px;
+    font-size: 0.75rem;
+    // text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 5px 10px;
+    border-radius: 16px;
     text-decoration: none;
-}
-
-nav a.active, nav a:hover{
-    background: #1b9bff;
-    transition: 0.5s;
 }
 
 .checkbtn{
     font-size: 30px;
     color: white;
     float: right;
-    line-height: 80px;
+    // line-height: 80px;
     margin-right: 40px;
     cursor: pointer;
     display: none;
@@ -69,35 +80,43 @@ nav a.active, nav a:hover{
 #check{
     display: none;
 }
+@media (min-width: 952px){
+    nav a:hover{
+        background: #400ac9;
+        transition: 0.5s;
+    }
+}
 
 @media (max-width: 952px)
 {
-    label.logo{
-        font-size: 30px;
-        padding-left: 50px;
-    }
-
     nav ul li a{
         font-size: 16px;
+        
     }
 }
 
 @media (max-width: 858px)
 {
+    // .text{
+    //     display: none;
+    // }
     .checkbtn{
         display: block;
     }
     ul{
         position: fixed;
         width: 100%;
-        height: 100vh;
+        height: 92vh;
         background: #2c3e50;
-        top: 80px;
+        top: 8vh;
         left: -100%;
         text-align: center;
         transition: all .5s;
         background-color: #010e36;
         z-index: 10;    
+        display: flex;
+        flex-direction: column;
+
     }
 
     nav ul li{
@@ -108,11 +127,12 @@ nav a.active, nav a:hover{
 
     nav ul li a{
         font-size: 20px;
+
     }
 
     a:hover, a.active{
-        background: none;
-        color: #0082e6;
+        background-color: #010e36;
+        
     }
 
     #check:checked ~ ul{
@@ -121,35 +141,204 @@ nav a.active, nav a:hover{
 }
 
 // I N T R O   S E C T I O N
-.empty{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #1b4b7a;
+
+
+.intro{
+    background-color: lightblue;
+    // margin: 10px;
+    // border: 1px solid black;
+    min-height: 100vh;
+    display: grid;
+    grid-template: 1fr / 2fr 1.5fr;
+    grid-template-areas: 
+        "c1 c2";
+
+    .container1{
+        margin: 0% 5%;
+        // border: 1px solid black;
+        // background-color: grey;
+        grid-area: c1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+
+        .sub-container1{
+            margin: 5% 0%;
+            // border: 1px solid black;
+            height: 50%;
+            vertical-align: middle;
+
+
+            h1{
+                font-family: "crimson Pro", Helvetica, sans-serif;
+                margin: 10% 0%;
+                // border: 1px solid black;
+                font-size: 1.3rem;
+                letter-spacing: 2px;
+                margin: 1em 0em;
+
+                span{
+                    color: red;
+                    // margin: 10px;
+                    // border: 1px solid black;
+                    font-size: 2rem;
+                }
+            }
+            p{
+                font-family: rokkitt, Arial, Helvetica, sans-serif;
+                // border: 1px solid black;
+                font-size: 1rem;
+                font-weight: 700;
+                margin: 2% 6% 2% 0%;
+                text-align: justify;
+
+            }
+            a{
+                font-family: Rokkitt, Arial, Helvetica, sans-serif;
+                margin: 10px 0px;
+                // border: 1px solid black;
+                font-size: 0.85rem;
+                font-weight: 600;
+                padding: 0.5em 1em;
+                background-color: blue;
+                color: white;
+                text-decoration: none;
+                border-radius: 1em;
+                letter-spacing: 1px;
+            }
+        }
+        .sub-container2{
+            // margin: 10px;
+            // border: 1px solid black;
+            grid-area: c2;
+            height: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+
+            img{
+                margin: 5px 10px;
+                width: 30px;
+                // filter: invert(100%);
+                transition: all ease 1s;
+
+                &:hover{
+                    //&:hover == img:hover
+                    transform: translateY(-10px);
+                    transition: all ease 1s;
+                }
+            }
+            .small-image{
+                margin: 20px;
+                width: 40px;
+            }
+        }
+    }
+
+    .container2{
+        // margin: 10px;
+        // border: 1px solid black;
+        // background-color: white;
+        display: grid;
+        // background-image: url(Intro_section/suriya_photo_1.jpg);
+
+        img{
+            align-self: center;
+            justify-self: center;
+            // margin: 10px;
+            // border: 1px solid black;
+            width: 100%;
+            //95% of the parent element (container 2)
+            border-radius: 50%;
+            filter: grayscale(90%) opacity(0.5);
+            // filter: opacity(0.5);
+            // background-color: rgba(18, 18, 245, 1);
+        }
+    }
 }
+@media (max-width: 900px){
+    .intro{
+        display: grid;
+        grid-template: 1fr / 1.7fr 1.5fr;
+        grid-template-areas: 
+            "c1 c2";
+    }
+}
+@media (max-width: 700px)
+{
+
+    .intro{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .container2{
+            width: 60%;
+            margin-top: 20%;
+
+            img{
+                border-radius: 50%;
+            }
+        }
+        .container1{
+            margin: 5% 5% 10% 5%;
+            
+            .sub-container1{
+                h1{
+                    margin: 2% 0%;
+                    font-size: 1.1rem;
+
+                    span{
+                        font-size: 1.5rem;
+                        color: red;
+                    }
+                }
+
+                p{
+                    color: rgb(59, 58, 58);
+                    font-size: 0.8rem;
+                    font-weight: 350px;
+                    
+                }
+
+                a{
+                    font-size: 0.7rem;
+                    
+                }
+            }
+            .sub-container2{
+                display: none;
+            }
+        }
+    }    
+}
+    
 
 // S K I L L S   S E C T I O N
 .skills{
+    
     min-height: 100vh;
+    padding: 0% 7%;
     //1 vh = (1/100)(height of viewport)
     //So 100vh == height of the entire screen
     //Similarly 1vw = (1/100)(width of viewport)
-    padding: 0% 8%;
-    margin: 0px;
+    
     // border: 1px solid black;
     background-image: linear-gradient(to right, #4f00e3, #4919e8, 
     #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6,
     #613bf1, #7136ec, #7e31e7, #8a2be2);
 
     h1{
+
         text-align: center;
         font-size: 1.5rem;
         font-weight: 700;
         color: white;
         letter-spacing: 1px;
         text-transform: uppercase;
-        padding: 40px 0px;
+        padding: 7% 0px 0px 40px;
     }
     
     .container{
