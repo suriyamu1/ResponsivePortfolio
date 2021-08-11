@@ -140,7 +140,14 @@ nav ul li a {
 }
 
 .intro {
-  background-color: lightblue;
+  background-image: -webkit-gradient(linear, right top, left top, from(#4f00e3), color-stop(#0047f2), color-stop(#0067f8), color-stop(#0080f5), color-stop(#0096ed), color-stop(#00a6ed), color-stop(#00b3ea), color-stop(#00c0e4), color-stop(#12cfea), color-stop(#2bdeed), color-stop(#45edf0), to(#5ffbf1));
+  background-image: linear-gradient(to left, #4f00e3, #0047f2, #0067f8, #0080f5, #0096ed, #00a6ed, #00b3ea, #00c0e4, #12cfea, #2bdeed, #45edf0, #5ffbf1);
+  background-image: -webkit-gradient(linear, left top, right top, from(#90afb8), color-stop(#75a0b1), color-stop(#5b91ab), color-stop(#4281a6), color-stop(#2871a0), color-stop(#2a70a4), color-stop(#2e6fa8), color-stop(#346dab), color-stop(#4b7bba), color-stop(#5f8ac9), color-stop(#7399d8), to(#86a8e7));
+  background-image: linear-gradient(to right, #90afb8, #75a0b1, #5b91ab, #4281a6, #2871a0, #2a70a4, #2e6fa8, #346dab, #4b7bba, #5f8ac9, #7399d8, #86a8e7);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000046), color-stop(#001556), color-stop(#002566), color-stop(#003575), color-stop(#004584), color-stop(#005392), color-stop(#00629f), color-stop(#0071ab), color-stop(#0082b9), color-stop(#0093c7), color-stop(#07a4d4), to(#1cb5e0));
+  background-image: linear-gradient(to bottom, #000046, #001556, #002566, #003575, #004584, #005392, #00629f, #0071ab, #0082b9, #0093c7, #07a4d4, #1cb5e0);
+  background-image: -webkit-gradient(linear, left top, right top, from(#4f00e3), color-stop(#4919e8), color-stop(#4126ed), color-stop(#3931f2), color-stop(#303af6), color-stop(#3b3cf6), color-stop(#453df6), color-stop(#4d3ff6), color-stop(#613bf1), color-stop(#7136ec), color-stop(#7e31e7), to(#8a2be2));
+  background-image: linear-gradient(to right, #4f00e3, #4919e8, #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6, #613bf1, #7136ec, #7e31e7, #8a2be2);
   min-height: 100vh;
   display: -ms-grid;
   display: grid;
@@ -181,7 +188,7 @@ nav ul li a {
 }
 
 .intro .container1 .sub-container1 h1 span {
-  color: red;
+  color: whitesmoke;
   font-size: 2rem;
 }
 
@@ -199,7 +206,14 @@ nav ul li a {
   font-size: 0.85rem;
   font-weight: 600;
   padding: 0.5em 1em;
-  background-color: blue;
+  background-image: -webkit-gradient(linear, left top, right top, from(#000046), color-stop(#140656), color-stop(#290866), color-stop(#3e0975), color-stop(#530784), color-stop(#6a0489), color-stop(#7f028e), color-stop(#940092), color-stop(#aa008d), color-stop(#be0088), color-stop(#d00782), to(#e01c7b));
+  background-image: linear-gradient(to right, #000046, #140656, #290866, #3e0975, #530784, #6a0489, #7f028e, #940092, #aa008d, #be0088, #d00782, #e01c7b);
+  background-image: -webkit-gradient(linear, left top, right top, from(#0808b4), color-stop(#2a04ae), color-stop(#3a02a9), color-stop(#4500a3), color-stop(#4e009e), color-stop(#65009a), color-stop(#780097), color-stop(#880093), color-stop(#a6008f), color-stop(#c0008a), color-stop(#d70083), to(#ec117b));
+  background-image: linear-gradient(to right, #0808b4, #2a04ae, #3a02a9, #4500a3, #4e009e, #65009a, #780097, #880093, #a6008f, #c0008a, #d70083, #ec117b);
+  background-image: -webkit-gradient(linear, left top, right top, from(#d42379), color-stop(#c50083), color-stop(#b1008e), color-stop(#97009a), color-stop(#7500a5), color-stop(#6600af), color-stop(#5000b9), color-stop(#2a09c4), color-stop(#3b0ad0), color-stop(#4b0add), color-stop(#590be9), to(#680af5));
+  background-image: linear-gradient(to right, #d42379, #c50083, #b1008e, #97009a, #7500a5, #6600af, #5000b9, #2a09c4, #3b0ad0, #4b0add, #590be9, #680af5);
+  background-image: -webkit-gradient(linear, left top, right top, from(#c33764), color-stop(#a62a6f), color-stop(#822675), color-stop(#572676), to(#1d2671));
+  background-image: linear-gradient(to right, #c33764, #a62a6f, #822675, #572676, #1d2671);
   color: white;
   text-decoration: none;
   border-radius: 1em;
@@ -254,8 +268,8 @@ nav ul li a {
       justify-self: center;
   width: 100%;
   border-radius: 50%;
-  -webkit-filter: grayscale(90%) opacity(0.5);
-          filter: grayscale(90%) opacity(0.5);
+  -webkit-filter: grayscale(100%) opacity(75%);
+          filter: grayscale(100%) opacity(75%);
 }
 
 @media (max-width: 900px) {
@@ -301,10 +315,8 @@ nav ul li a {
   }
   .intro .container1 .sub-container1 h1 span {
     font-size: 1.5rem;
-    color: red;
   }
   .intro .container1 .sub-container1 p {
-    color: #3b3a3a;
     font-size: 0.8rem;
     font-weight: 350px;
   }
