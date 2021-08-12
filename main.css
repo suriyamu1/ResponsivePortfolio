@@ -106,7 +106,7 @@ nav ul li a {
   ul {
     position: fixed;
     width: 100%;
-    height: 92vh;
+    max-height: 46vh;
     background: #2c3e50;
     top: 8vh;
     left: -100%;
@@ -122,14 +122,17 @@ nav ul li a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 15% 0%;
   }
   nav ul li {
     display: block;
-    margin: 50px 0;
+    margin: 10px 0;
+    height: 6vh;
     line-height: 30px;
   }
   nav ul li a {
-    font-size: 20px;
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
   }
   a:hover, a.active {
     background-color: #010e36;
@@ -142,13 +145,13 @@ nav ul li a {
 .intro {
   background-image: -webkit-gradient(linear, left top, right top, from(#4f00e3), color-stop(#4919e8), color-stop(#4126ed), color-stop(#3931f2), color-stop(#303af6), color-stop(#3b3cf6), color-stop(#453df6), color-stop(#4d3ff6), color-stop(#613bf1), color-stop(#7136ec), color-stop(#7e31e7), to(#8a2be2));
   background-image: linear-gradient(to right, #4f00e3, #4919e8, #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6, #613bf1, #7136ec, #7e31e7, #8a2be2);
-  padding: 0% 5%;
   min-height: 100vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr;
   -ms-grid-columns: 2fr 1.5fr;
       grid-template: 1fr / 2fr 1.5fr;
+  padding: 0% 5% 7% 5%;
       grid-template-areas: "c1 c2";
 }
 
@@ -273,14 +276,20 @@ nav ul li a {
     background-image: -webkit-gradient(linear, left top, right top, from(#eb125d), color-stop(#e5419e), color-stop(#c66bd3), color-stop(#958ef4), color-stop(#5da9ff), color-stop(#44b3ff), color-stop(#28bcff), color-stop(#0cc5fe), color-stop(#0cc5fe), color-stop(#0cc5fe), color-stop(#0cc5fe), to(#0cc5fe));
     background-image: linear-gradient(to right, #eb125d, #e5419e, #c66bd3, #958ef4, #5da9ff, #44b3ff, #28bcff, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe);
     opacity: 80%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
     opacity: 100%;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
   100% {
     background-image: -webkit-gradient(linear, left top, right top, from(#eb125d), color-stop(#e5419e), color-stop(#c66bd3), color-stop(#958ef4), color-stop(#5da9ff), color-stop(#44b3ff), color-stop(#28bcff), color-stop(#0cc5fe), color-stop(#0cc5fe), color-stop(#0cc5fe), color-stop(#0cc5fe), to(#0cc5fe));
     background-image: linear-gradient(to right, #eb125d, #e5419e, #c66bd3, #958ef4, #5da9ff, #44b3ff, #28bcff, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe);
     opacity: 80%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -289,14 +298,20 @@ nav ul li a {
     background-image: -webkit-gradient(linear, left top, right top, from(#eb125d), color-stop(#e5419e), color-stop(#c66bd3), color-stop(#958ef4), color-stop(#5da9ff), color-stop(#44b3ff), color-stop(#28bcff), color-stop(#0cc5fe), color-stop(#0cc5fe), color-stop(#0cc5fe), color-stop(#0cc5fe), to(#0cc5fe));
     background-image: linear-gradient(to right, #eb125d, #e5419e, #c66bd3, #958ef4, #5da9ff, #44b3ff, #28bcff, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe);
     opacity: 80%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
     opacity: 100%;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
   100% {
     background-image: -webkit-gradient(linear, left top, right top, from(#eb125d), color-stop(#e5419e), color-stop(#c66bd3), color-stop(#958ef4), color-stop(#5da9ff), color-stop(#44b3ff), color-stop(#28bcff), color-stop(#0cc5fe), color-stop(#0cc5fe), color-stop(#0cc5fe), color-stop(#0cc5fe), to(#0cc5fe));
     background-image: linear-gradient(to right, #eb125d, #e5419e, #c66bd3, #958ef4, #5da9ff, #44b3ff, #28bcff, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe);
     opacity: 80%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -361,9 +376,9 @@ nav ul li a {
 
 .skills {
   min-height: 100vh;
-  padding: 0% 7%;
-  background-image: -webkit-gradient(linear, left top, right top, from(#4f00e3), color-stop(#4919e8), color-stop(#4126ed), color-stop(#3931f2), color-stop(#303af6), color-stop(#3b3cf6), color-stop(#453df6), color-stop(#4d3ff6), color-stop(#613bf1), color-stop(#7136ec), color-stop(#7e31e7), to(#8a2be2));
-  background-image: linear-gradient(to right, #4f00e3, #4919e8, #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6, #613bf1, #7136ec, #7e31e7, #8a2be2);
+  padding: 7% 7%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#4f00e3bd), color-stop(#4919e8bd), color-stop(#4126edbd), color-stop(#3931f2bd), color-stop(#303af6bd), color-stop(#3b3cf6bd), color-stop(#453df6bd), color-stop(#4d3ff6bd), color-stop(#613bf1bd), color-stop(#7136ecbd), color-stop(#7e31e7bd), to(#8a2be2bd));
+  background-image: linear-gradient(to right, #4f00e3bd, #4919e8bd, #4126edbd, #3931f2bd, #303af6bd, #3b3cf6bd, #453df6bd, #4d3ff6bd, #613bf1bd, #7136ecbd, #7e31e7bd, #8a2be2bd);
 }
 
 .skills h1 {
@@ -373,7 +388,6 @@ nav ul li a {
   color: white;
   letter-spacing: 1px;
   text-transform: uppercase;
-  padding: 7% 0px 0px 40px;
 }
 
 .skills .container {
@@ -538,16 +552,15 @@ nav ul li a {
 }
 
 .accomp {
+  padding: 7% 0%;
   background-image: -webkit-gradient(linear, left top, right top, from(#4f00e3), color-stop(#4919e8), color-stop(#4126ed), color-stop(#3931f2), color-stop(#303af6), color-stop(#3b3cf6), color-stop(#453df6), color-stop(#4d3ff6), color-stop(#613bf1), color-stop(#7136ec), color-stop(#7e31e7), to(#8a2be2));
   background-image: linear-gradient(to right, #4f00e3, #4919e8, #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6, #613bf1, #7136ec, #7e31e7, #8a2be2);
-  margin: 0px;
   min-height: 100vh;
 }
 
 .accomp h1 {
   text-align: center;
   margin: 0px;
-  padding: 30px 2% 0px 2%;
   font-size: 1.25rem;
   font-weight: bold;
 }
@@ -736,7 +749,7 @@ nav ul li a {
 .contact {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1c075e), color-stop(#20086b), color-stop(#240979), color-stop(#290a87), to(#2d0b95));
   background-image: linear-gradient(to bottom, #1c075e, #20086b, #240979, #290a87, #2d0b95);
-  padding: 25px 0px;
+  padding: 4% 2%;
 }
 
 .contact h1 {
@@ -745,11 +758,9 @@ nav ul li a {
   letter-spacing: 3px;
   color: cornflowerblue;
   text-align: center;
-  margin-bottom: 40px;
 }
 
 .contact .main_container {
-  margin: 0px 0px 30px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

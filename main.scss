@@ -106,7 +106,7 @@ nav ul li a{
     ul{
         position: fixed;
         width: 100%;
-        height: 92vh;
+        max-height: 46vh;
         background: #2c3e50;
         top: 8vh;
         left: -100%;
@@ -116,17 +116,20 @@ nav ul li a{
         z-index: 10;    
         display: flex;
         flex-direction: column;
+        padding: 15% 0%;
 
     }
 
     nav ul li{
         display: block;
-        margin: 50px 0;
+        margin: 10px 0;
+        height: 6vh;
         line-height: 30px;
     }
 
     nav ul li a{
-        font-size: 20px;
+        font-size: 0.75rem;
+        letter-spacing: 1.5px;
 
     }
 
@@ -153,10 +156,11 @@ nav ul li a{
     // background-image: linear-gradient(to bottom, #000046, #001556, #002566, #003575, #004584, #005392, #00629f, #0071ab, #0082b9, #0093c7, #07a4d4, #1cb5e0);
     
     background-image: linear-gradient(to right, #4f00e3, #4919e8, #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6, #613bf1, #7136ec, #7e31e7, #8a2be2);
-    padding: 0% 5%;
     min-height: 100vh;               //to make this section fill the whole screen if it is smaller than 100vh
     display: grid;                   //Used grid (grid-template-areas) to position the c2 container on top of c1 in mobile screens
     grid-template: 1fr / 2fr 1.5fr;  //1 row and two columns (2 : 1.5)
+    padding: 0% 5% 7% 5%;
+
     grid-template-areas: 
         "c1 c2";
 
@@ -265,15 +269,18 @@ nav ul li a{
     0%{
         background-image: linear-gradient(to right, #eb125d, #e5419e, #c66bd3, #958ef4, #5da9ff, #44b3ff, #28bcff, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe);
         opacity: 80%;
+        transform: scale(1);
     }
     50%{
         //background-image: linear-gradient(to right, #eb125d, #e5419e, #c66bd3, #958ef4, #5da9ff, #44b3ff, #28bcff, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe);
         //background-image: linear-gradient(to right, #eb125d, #eb125d, #eb125d, #eb125d, #eb125d, #ec257a, #e93a97, #e04eb1, #bc76e2, #8797ff, #47b1ff, #0cc5fe);
         opacity: 100%;
+        transform: scale(1.5);
     }
     100%{
         background-image: linear-gradient(to right, #eb125d, #e5419e, #c66bd3, #958ef4, #5da9ff, #44b3ff, #28bcff, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe);
         opacity: 80%;
+        transform: scale(1);
     }
 }
 @media (max-width: 900px){
@@ -339,15 +346,15 @@ nav ul li a{
 .skills{
     
     min-height: 100vh;
-    padding: 0% 7%;
+    padding: 7% 7%;
     //1 vh = (1/100)(height of viewport)
     //So 100vh == height of the entire screen
     //Similarly 1vw = (1/100)(width of viewport)
     
     // border: 1px solid black;
-    background-image: linear-gradient(to right, #4f00e3, #4919e8, 
-    #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6,
-    #613bf1, #7136ec, #7e31e7, #8a2be2);
+    background-image: linear-gradient(to right, #4f00e3bd, #4919e8bd, 
+    #4126edbd, #3931f2bd, #303af6bd, #3b3cf6bd, #453df6bd, #4d3ff6bd,
+    #613bf1bd, #7136ecbd, #7e31e7bd, #8a2be2bd);
 
     h1{
 
@@ -357,7 +364,7 @@ nav ul li a{
         color: white;
         letter-spacing: 1px;
         text-transform: uppercase;
-        padding: 7% 0px 0px 40px;
+        // padding: 7% 0px 0px 40px;
     }
     
     .container{
@@ -528,21 +535,18 @@ nav ul li a{
 
 // A C C O M P L I S H M E N T S   S E C T I O N
 .accomp{
-    // border: 1px solid black;
+    padding: 7% 0%;
     background-image: linear-gradient(to right, #4f00e3, #4919e8, 
     #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6,
     #613bf1, #7136ec, #7e31e7, #8a2be2);
 
     //background-image: linear-gradient(to top, #000046, #001556, #002566, #003575, #004584, #005392, #00629f, #0071ab, #0082b9, #0093c7, #07a4d4, #1cb5e0);
-
-    margin: 0px;
     min-height: 100vh;
 
     h1{
         // border: 1px solid black;
         text-align: center;
         margin: 0px;
-        padding: 30px 2% 0px 2%;
         font-size: 1.25rem;
         font-weight: bold;
     }
@@ -740,7 +744,7 @@ nav ul li a{
 
 .contact{
     background-image: linear-gradient(to bottom, #1c075e, #20086b, #240979, #290a87, #2d0b95);
-    padding: 25px 0px;
+    padding: 4% 2%;
     
     
     h1{
@@ -749,11 +753,10 @@ nav ul li a{
         letter-spacing: 3px;
         color: cornflowerblue;
         text-align: center;
-        margin-bottom: 40px;
     }
     .main_container{
         // border: 1px solid white;
-        margin: 0px 0px 30px 0px;
+        // margin: 0px 0px 30px 0px;
         display: flex;
         justify-content: space-between;
 
