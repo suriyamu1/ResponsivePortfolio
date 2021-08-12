@@ -143,163 +143,169 @@ nav ul li a{
 // I N T R O   S E C T I O N
 
 
-.intro{
-    background-image: linear-gradient(to left, #4f00e3, #0047f2, 
-    #0067f8, #0080f5, #0096ed, #00a6ed, #00b3ea, #00c0e4,
-    #12cfea, #2bdeed, #45edf0, #5ffbf1);
+.intro{ //this code is working fine for >=1000px
+    // background-image: linear-gradient(to left, #4f00e3, #0047f2, 
+    // #0067f8, #0080f5, #0096ed, #00a6ed, #00b3ea, #00c0e4,
+    // #12cfea, #2bdeed, #45edf0, #5ffbf1);
 
-    background-image: linear-gradient(to right, #90afb8, #75a0b1, #5b91ab, #4281a6, #2871a0, #2a70a4, #2e6fa8, #346dab, #4b7bba, #5f8ac9, #7399d8, #86a8e7);
+    // background-image: linear-gradient(to right, #90afb8, #75a0b1, #5b91ab, #4281a6, #2871a0, #2a70a4, #2e6fa8, #346dab, #4b7bba, #5f8ac9, #7399d8, #86a8e7);
     
-    background-image: linear-gradient(to bottom, #000046, #001556, #002566, #003575, #004584, #005392, #00629f, #0071ab, #0082b9, #0093c7, #07a4d4, #1cb5e0);
+    // background-image: linear-gradient(to bottom, #000046, #001556, #002566, #003575, #004584, #005392, #00629f, #0071ab, #0082b9, #0093c7, #07a4d4, #1cb5e0);
     
-    background-image: linear-gradient(to right, #4f00e3, #4919e8, 
-    #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6,
-    #613bf1, #7136ec, #7e31e7, #8a2be2);
-    // margin: 10px;
-    // border: 1px solid black;
-    min-height: 100vh;
-    display: grid;
-    grid-template: 1fr / 2fr 1.5fr;
+    background-image: linear-gradient(to right, #4f00e3, #4919e8, #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6, #613bf1, #7136ec, #7e31e7, #8a2be2);
+    padding: 0% 5%;
+    min-height: 100vh;               //to make this section fill the whole screen if it is smaller than 100vh
+    display: grid;                   //Used grid (grid-template-areas) to position the c2 container on top of c1 in mobile screens
+    grid-template: 1fr / 2fr 1.5fr;  //1 row and two columns (2 : 1.5)
     grid-template-areas: 
         "c1 c2";
 
     .container1{
         margin: 0% 5%;
-        // border: 1px solid black;
-        // background-color: grey;
         grid-area: c1;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        flex-direction: column; //default flex-direction is row
+        justify-content: space-around; //more space in between the elements inside parent element
 
 
         .sub-container1{
-            margin: 5% 0%;
-            // border: 1px solid black;
-            height: 50%;
-            vertical-align: middle;
-
+            margin: 25% 0% 5% 0%;
+            min-height: 50%;
 
             h1{
                 font-family: "crimson Pro", Helvetica, sans-serif;
-                margin: 10% 0%;
-                // border: 1px solid black;
+                margin: 15% 0%;
                 font-size: 1.3rem;
                 letter-spacing: 2px;
                 margin: 1em 0em;
 
                 span{
                     color: whitesmoke;
-                    // margin: 10px;
-                    // border: 1px solid black;
                     font-size: 2rem;
                 }
             }
             p{
                 font-family: rokkitt, Arial, Helvetica, sans-serif;
-                // border: 1px solid black;
                 font-size: 1rem;
                 font-weight: 700;
-                margin: 2% 6% 2% 0%;
+                margin: 2% 15% 2% 0%;  //leaving more space in the right so as the text and picture dont come too close
                 text-align: justify;
-
             }
-            a{
-                font-family: Rokkitt, Arial, Helvetica, sans-serif;
-                margin: 10px 0px;
-                // border: 1px solid black;
-                font-size: 0.85rem;
-                font-weight: 600;
-                padding: 0.5em 1em;
-                background-image: linear-gradient(to right, #000046, #140656, #290866, #3e0975, #530784, #6a0489, #7f028e, #940092, #aa008d, #be0088, #d00782, #e01c7b);
-                background-image: linear-gradient(to right, #0808b4, #2a04ae, #3a02a9, #4500a3, #4e009e, #65009a, #780097, #880093, #a6008f, #c0008a, #d70083, #ec117b);
-                background-image: linear-gradient(to right, #d42379, #c50083, #b1008e, #97009a, #7500a5, #6600af, #5000b9, #2a09c4, #3b0ad0, #4b0add, #590be9, #680af5);
-                background-image: linear-gradient(to right, #c33764, #a62a6f, #822675, #572676, #1d2671);
-                color: white;
-                text-decoration: none;
-                border-radius: 1em;
-                letter-spacing: 1px;
+            .resume{
+                margin: 5% 0%;
+                .res_btn{
+                    font-family: Rokkitt, Arial, Helvetica, sans-serif;
+                    margin: 0px 0px;
+                    font-size: 0.85rem;
+                    font-weight: 600;
+                    padding: 0.5em 1em;
+                    // background-image: linear-gradient(to right, #000046, #140656, #290866, #3e0975, #530784, #6a0489, #7f028e, #940092, #aa008d, #be0088, #d00782, #e01c7b);
+                    // background-image: linear-gradient(to right, #0808b4, #2a04ae, #3a02a9, #4500a3, #4e009e, #65009a, #780097, #880093, #a6008f, #c0008a, #d70083, #ec117b);
+                    // background-image: linear-gradient(to right, #d42379, #c50083, #b1008e, #97009a, #7500a5, #6600af, #5000b9, #2a09c4, #3b0ad0, #4b0add, #590be9, #680af5);
+                    // background-image: linear-gradient(to right, #c33764, #a62a6f, #822675, #572676, #1d2671);
+                    color: rgb(43, 43, 43);
+                    text-decoration: none;
+                    border-radius: 1em;
+                    letter-spacing: 1px;
+
+                    //adding animation with keyframes
+                    animation: colour_change 3s infinite;
+
+                    &:hover{
+                        opacity: 100%;
+                        transform: scale(1.05);
+                        //not working
+                    }
+                }
+
             }
         }
         .sub-container2{
-            // margin: 10px;
-            // border: 1px solid black;
             grid-area: c2;
             height: 10%;
             display: flex;
             align-items: center;
-            justify-content: left;
+            padding-top: 15%;
 
             img{
-                margin: 5px 10px;
-                width: 30px;
-                // filter: invert(100%);
+                margin: 5px 30px 5px 0px;
+                width: 25px;
                 transition: all ease 1s;
                 
-
                 &:hover{
                     //&:hover == img:hover
-                    transform: translateY(-10px);
+                    transform: translateY(-10px); //the icons moves up when user hovers over it
                     transition: all ease 1s;
                 }
             }
             .small-image{
-                margin: 20px;
-                width: 40px;
+                //The icons of HackerRank and Youtube are smaller than inkedin and Github icons, so this class is created to style the smaller icons
+                margin: 5px 30px 5px 0px;
+                width: 33px;
             }
         }
     }
 
     .container2{
-        // margin: 10px;
-        // border: 1px solid black;
-        // background-color: white;
         display: grid;
-        // background-image: url(Intro_section/suriya_photo_1.jpg);
+        //grid is used to use align-self and justify-self (easy way to position img)
 
         img{
             align-self: center;
             justify-self: center;
-            // margin: 10px;
-            // border: 1px solid black;
-            width: 100%;
-            //95% of the parent element (container 2)
+            width: 100%;     //100% of the parent element (container 2)
             border-radius: 50%;
             // filter: opacity(0.5);
-            // background-color: rgba(18, 18, 245, 1);
             filter: grayscale(100%) opacity(75%);
         }
+    }
+}
+
+@keyframes colour_change{
+    0%{
+        background-image: linear-gradient(to right, #eb125d, #e5419e, #c66bd3, #958ef4, #5da9ff, #44b3ff, #28bcff, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe);
+        opacity: 80%;
+    }
+    50%{
+        //background-image: linear-gradient(to right, #eb125d, #e5419e, #c66bd3, #958ef4, #5da9ff, #44b3ff, #28bcff, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe);
+        //background-image: linear-gradient(to right, #eb125d, #eb125d, #eb125d, #eb125d, #eb125d, #ec257a, #e93a97, #e04eb1, #bc76e2, #8797ff, #47b1ff, #0cc5fe);
+        opacity: 100%;
+    }
+    100%{
+        background-image: linear-gradient(to right, #eb125d, #e5419e, #c66bd3, #958ef4, #5da9ff, #44b3ff, #28bcff, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe);
+        opacity: 80%;
     }
 }
 @media (max-width: 900px){
     .intro{
         display: grid;
-        grid-template: 1fr / 1.7fr 1.5fr;
+        grid-template: 1fr / 2.5fr 1.5fr;   //The ratio is increased from 2:1.5 to 2.5:1.5
         grid-template-areas: 
             "c1 c2";
     }
 }
+
 @media (max-width: 700px)
 {
-
     .intro{
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-around;
 
         .container2{
-            width: 60%;
-            margin-top: 20%;
+            width: 55%;
+            margin-top: 20%; //to avoid the picture from hiding under nav bar
 
             img{
-                border-radius: 50%;
+                border-radius: 50%; //to get a circle frame
             }
         }
         .container1{
             margin: 5% 5% 10% 5%;
             
             .sub-container1{
+                margin: 0%;
                 h1{
                     margin: 2% 0%;
                     font-size: 1.1rem;
@@ -312,6 +318,7 @@ nav ul li a{
                 p{
                     font-size: 0.8rem;
                     font-weight: 350px;
+                    margin: 0% 0%;
                     
                 }
 
