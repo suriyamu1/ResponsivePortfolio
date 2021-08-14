@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: serif;
+  font-family: 'Crimson Pro', sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 20px;
@@ -85,7 +85,7 @@ nav ul li a {
   display: none;
 }
 
-@media (min-width: 952px) {
+@media (min-width: 900px) {
   nav a:hover {
     background: #400ac9;
     -webkit-transition: 0.5s;
@@ -93,13 +93,13 @@ nav ul li a {
   }
 }
 
-@media (max-width: 952px) {
+@media (max-width: 900px) {
   nav ul li a {
     font-size: 16px;
   }
 }
 
-@media (max-width: 858px) {
+@media (max-width: 800px) {
   .checkbtn {
     display: block;
   }
@@ -177,7 +177,7 @@ nav ul li a {
 }
 
 .intro .container1 .sub-container1 h1 {
-  font-family: "crimson Pro", Helvetica, sans-serif;
+  font-family: Rokkitt, sans-serif;
   margin: 15% 0%;
   font-size: 1.3rem;
   letter-spacing: 2px;
@@ -190,7 +190,6 @@ nav ul li a {
 }
 
 .intro .container1 .sub-container1 p {
-  font-family: rokkitt, Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 700;
   margin: 2% 15% 2% 0%;
@@ -383,10 +382,11 @@ nav ul li a {
 
 .skills h1 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  margin-bottom: 3%;
   font-weight: 700;
-  color: white;
-  letter-spacing: 1px;
+  color: whitesmoke;
+  letter-spacing: 5px;
   text-transform: uppercase;
 }
 
@@ -399,7 +399,7 @@ nav ul li a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 0px 5%;
+  margin: 0% 5%;
 }
 
 .skills .container .skills_box {
@@ -411,34 +411,33 @@ nav ul li a {
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template: auto auto auto / 1fr 1fr 1fr 1fr;
       grid-template-areas: "i i i i i" "t t t t t" "s s s s s";
-  background-color: rgba(245, 245, 245, 0.2);
   width: 270px;
   border-radius: 20px;
   -webkit-transition: 1.5s;
   transition: 1.5s;
-  background: rgba(253, 253, 255, 0.45);
-  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 42, 194, 0.37);
-          box-shadow: 0 8px 32px 0 rgba(31, 42, 194, 0.37);
-  backdrop-filter: blur(2.5px);
-  -webkit-backdrop-filter: blur(0.45px);
-  border-radius: 25px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(225, 225, 225, 0.2);
+  -webkit-box-shadow: 0 0px 35px 2px rgba(31, 38, 135, 0.77);
+          box-shadow: 0 0px 35px 2px rgba(31, 38, 135, 0.77);
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
 }
 
 .skills .container .skills_box:hover {
-  background-color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: 0 0px 50px 0px rgba(185, 185, 185, 0.47);
+          box-shadow: 0 0px 50px 0px rgba(185, 185, 185, 0.47);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
 }
 
 .skills .container .skills_box .image {
-  margin: 5px;
-  padding: 0px;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   grid-area: i;
+  margin: 5px;
+  padding: 0px;
   text-align: center;
 }
 
@@ -454,36 +453,37 @@ nav ul li a {
   grid-area: t;
   text-align: center;
   font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 2px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #021347;
 }
 
 .skills .container .skills_box .short_text {
-  margin: 5px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
   padding: 0px;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   grid-area: s;
   font-size: 0.75rem;
-  font-weight: 500;
+  font-weight: 300;
   text-align: justify;
+  color: #1a1a1a;
 }
 
 @media (max-width: 1200px) {
   .skills {
-    padding: 0% 0%;
+    padding: 7% 0%;
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 700px) {
   .skills {
-    margin: 0px;
-    padding: 15px;
-    background-color: #001380;
+    padding-top: 15vh;
+    padding-bottom: 10vh;
   }
   .skills h1 {
-    padding: 20px 0px;
+    padding-bottom: 20px;
   }
   .skills .container .skills_box {
     margin: 10px;
@@ -491,16 +491,12 @@ nav ul li a {
     display: -ms-grid;
     display: grid;
         grid-template-areas: "t t t t t" "s s s s i" "s s s s i";
-    background: rgba(255, 255, 255, 0.7);
-    background: rgba(253, 253, 255, 0.35);
-    -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(2.5px);
-    -webkit-backdrop-filter: blur(2.5px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
     width: 95%;
     border-radius: 10px;
+    -webkit-box-shadow: 0 8px 15px 0 rgba(31, 38, 135, 0.37);
+            box-shadow: 0 8px 15px 0 rgba(31, 38, 135, 0.37);
+    -webkit-backdrop-filter: blur(0.5px);
+            backdrop-filter: blur(0.5px);
   }
   .skills .container .skills_box .image {
     margin: 10px;
@@ -560,9 +556,12 @@ nav ul li a {
 
 .accomp h1 {
   text-align: center;
-  margin: 0px;
-  font-size: 1.25rem;
-  font-weight: bold;
+  font-size: 1.61rem;
+  margin-bottom: 3%;
+  font-weight: 700;
+  color: whitesmoke;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .accomp .main_container {
@@ -574,10 +573,12 @@ nav ul li a {
   font-size: 1rem;
   font-weight: 900;
   margin: 45px 0px 10px 0px;
+  color: whitesmoke;
+  letter-spacing: 1px;
 }
 
 .accomp .main_container .container {
-  margin: 0% 5%;
+  margin: 0% 4%;
   padding: 0%;
 }
 
@@ -591,16 +592,14 @@ nav ul li a {
   -ms-grid-columns: 0.75fr 0.75fr 6.5fr 1fr;
       grid-template-columns: 0.75fr 0.75fr 6.5fr 1fr;
       grid-template-areas: "i1 i2 t l";
-  border-radius: 15px;
+  border-radius: 8.5px;
   -webkit-transition: all ease 1.5s;
   transition: all ease 1.5s;
-  background: rgba(255, 255, 255, 0.45);
-  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(0px);
-  -webkit-backdrop-filter: blur(0px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.438);
+  -webkit-box-shadow: 0px 0px 15px 2px rgba(13, 19, 105, 0.77);
+          box-shadow: 0px 0px 15px 2px rgba(13, 19, 105, 0.77);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
 }
 
 .accomp .main_container .container .sub_container:hover {
@@ -646,7 +645,6 @@ nav ul li a {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: t;
-  font-size: 0.8rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -656,20 +654,33 @@ nav ul li a {
 .accomp .main_container .container .sub_container .text .h {
   font-size: 0.9rem;
   font-weight: 800;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+.accomp .main_container .container .sub_container .text .h span {
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 
 .accomp .main_container .container .sub_container .text .p {
   font-size: 0.65rem;
   font-weight: 300;
   letter-spacing: 0.5px;
+  color: #272727;
+}
+
+.accomp .main_container .container .sub_container .text .p span {
+  font-size: 0.65rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: #272727;
 }
 
 .accomp .main_container .container .sub_container .link {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
   grid-area: l;
-  font-size: 0.5rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -678,9 +689,14 @@ nav ul li a {
 }
 
 .accomp .main_container .container .sub_container .link a img {
-  width: 30px;
+  width: 22px;
   -webkit-transition: all ease 1s;
   transition: all ease 1s;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .accomp .main_container .container .sub_container .link a img:hover {
@@ -693,44 +709,41 @@ nav ul li a {
     background-color: pink;
   }
   .accomp .main_container {
-    margin: 0% 3%;
+    margin: 0% 5%;
   }
-  .accomp .main_container .container1 {
-    margin: 0% 0% 0% 4%;
+  .accomp .main_container .container {
+    margin: 0% 4%;
   }
 }
 
 @media (max-width: 800px) {
-  .accomp {
-    background-color: lightblue;
-  }
   .accomp .main_container .container {
-    margin: 0% 0% 0% 1%;
+    margin: 0% 4%;
   }
   .accomp .main_container .container .sub_container .text .h {
-    font-family: san-serif;
     font-size: 0.8rem;
-    font-weight: bolder;
+    font-weight: 900;
     letter-spacing: 1px;
-    color: brown;
   }
   .accomp .main_container .container .sub_container .text .p {
-    font-size: 0.6rem;
+    font-size: 0.58rem;
     letter-spacing: normal;
     font-weight: 600px;
+    font-weight: 200;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .accomp {
-    background-color: lightgreen;
+    padding-top: 15vh;
+    padding-bottom: 10vh;
   }
   .accomp .main_container .container {
-    margin: 0;
+    margin: 0%;
   }
   .accomp .main_container .container .sub_container {
-    padding: 14px 6px;
-    margin: 10px 0px;
+    padding: 6px 6px;
+    margin: 15px 0px;
   }
   .accomp .main_container .container .sub_container .image1 img, .accomp .main_container .container .sub_container .image2 img {
     width: 35px;
@@ -741,8 +754,14 @@ nav ul li a {
   .accomp .main_container .container .sub_container .text .h {
     letter-spacing: normal;
   }
+  .accomp .main_container .container .sub_container .text .h span {
+    display: none;
+  }
+  .accomp .main_container .container .sub_container .text .p span {
+    display: none;
+  }
   .accomp .main_container .container .sub_container .link img {
-    width: 20px;
+    width: 15px;
   }
 }
 
@@ -756,8 +775,9 @@ nav ul li a {
   font-size: 1.15rem;
   font-weight: 700;
   letter-spacing: 3px;
-  color: cornflowerblue;
+  color: #5d84b8;
   text-align: center;
+  margin-bottom: 5vh;
 }
 
 .contact .main_container {
@@ -767,6 +787,7 @@ nav ul li a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0;
 }
 
 .contact .main_container .container1 {
@@ -840,21 +861,21 @@ nav ul li a {
   transition: all ease 1s;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 700px) {
+  .contact {
+    padding: 4% 2.5% 12% 2.5%;
+  }
   .contact h1 {
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
   .contact .main_container .container1 .info span {
     font-size: 0.85rem;
   }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 550px) {
   .contact h1 {
     font-size: 0.9rem;
-  }
-  .contact .main_container {
-    margin: 0px 0px 60px 0px;
   }
   .contact .main_container .container1 .info span {
     font-size: 0.75rem;

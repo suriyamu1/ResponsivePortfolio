@@ -2,10 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@700&display=swap'); //Crimson Pro FOnt
 @import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@351&display=swap'); //Rokkitt Font
 
+//Rokkitt for logo and name in intro section
+//Crimson Pro for other typography
+
 *{
     margin: 0;
     padding:0;
-    font-family: serif;
+    font-family: 'Crimson Pro', sans-serif;
     box-sizing: border-box;
     //border-box is to include the padding and border are included in the width and height
     font-size: 20px;
@@ -80,14 +83,14 @@ nav ul li a{
 #check{
     display: none;
 }
-@media (min-width: 952px){
+@media (min-width: 900px){
     nav a:hover{
         background: #400ac9;
         transition: 0.5s;
     }
 }
 
-@media (max-width: 952px)
+@media (max-width: 900px)
 {
     nav ul li a{
         font-size: 16px;
@@ -95,11 +98,8 @@ nav ul li a{
     }
 }
 
-@media (max-width: 858px)
+@media (max-width: 800px)
 {
-    // .text{
-    //     display: none;
-    // }
     .checkbtn{
         display: block;
     }
@@ -177,7 +177,7 @@ nav ul li a{
             min-height: 50%;
 
             h1{
-                font-family: "crimson Pro", Helvetica, sans-serif;
+                font-family: Rokkitt, sans-serif;
                 margin: 15% 0%;
                 font-size: 1.3rem;
                 letter-spacing: 2px;
@@ -189,7 +189,6 @@ nav ul li a{
                 }
             }
             p{
-                font-family: rokkitt, Arial, Helvetica, sans-serif;
                 font-size: 1rem;
                 font-weight: 700;
                 margin: 2% 15% 2% 0%;  //leaving more space in the right so as the text and picture dont come too close
@@ -251,15 +250,13 @@ nav ul li a{
     }
 
     .container2{
-        display: grid;
-        //grid is used to use align-self and justify-self (easy way to position img)
+        display: grid; //grid is used to use align-self and justify-self (easy way to position img)
 
         img{
             align-self: center;
             justify-self: center;
             width: 100%;     //100% of the parent element (container 2)
             border-radius: 50%;
-            // filter: opacity(0.5);
             filter: grayscale(100%) opacity(75%);
         }
     }
@@ -283,6 +280,7 @@ nav ul li a{
         transform: scale(1);
     }
 }
+
 @media (max-width: 900px){
     .intro{
         display: grid;
@@ -344,34 +342,26 @@ nav ul li a{
 
 // S K I L L S   S E C T I O N
 .skills{
-    
     min-height: 100vh;
+    //1 vh = (1/100)(height of viewport)    //So 100vh == height of the entire screen   //Similarly 1vw = (1/100)(width of viewport)
     padding: 7% 7%;
-    //1 vh = (1/100)(height of viewport)
-    //So 100vh == height of the entire screen
-    //Similarly 1vw = (1/100)(width of viewport)
-    
-    // border: 1px solid black;
-    background-image: linear-gradient(to right, #4f00e3bd, #4919e8bd, 
-    #4126edbd, #3931f2bd, #303af6bd, #3b3cf6bd, #453df6bd, #4d3ff6bd,
-    #613bf1bd, #7136ecbd, #7e31e7bd, #8a2be2bd);
+    background-image: linear-gradient(to right, #4f00e3bd, #4919e8bd, #4126edbd, #3931f2bd, #303af6bd, #3b3cf6bd, #453df6bd, #4d3ff6bd, #613bf1bd, #7136ecbd, #7e31e7bd, #8a2be2bd);
 
     h1{
-
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.75rem;
+        margin-bottom: 3%;
         font-weight: 700;
-        color: white;
-        letter-spacing: 1px;
+        color: whitesmoke;
+        letter-spacing: 5px;
         text-transform: uppercase;
-        // padding: 7% 0px 0px 40px;
     }
     
     .container{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        margin: 0px 5%;
+        margin: 0% 5%;
 
         .skills_box{
             margin: 25px 15px;
@@ -382,34 +372,27 @@ nav ul li a{
             "i i i i i"
             "t t t t t"
             "s s s s s";
-            // border: 1px solid black;
-            background-color: rgba(245,245,245,0.2);
             width: 270px;
             border-radius: 20px;
             transition: 1.5s;
 
             //glassmorphism
-            background: rgba( 253, 253, 255, 0.45 );
-            box-shadow: 0 8px 32px 0 rgba(31, 42, 194, 0.37);
-            backdrop-filter: blur(2.5px);
-            -webkit-backdrop-filter: blur(0.45px);
-            border-radius: 25px;
-            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            background: rgba( 225, 225, 225, 0.20 );
+            box-shadow: 0 0px 35px 2px rgba( 31, 38, 135, 0.77 );
+            backdrop-filter: blur( 1.0px );
 
             &:hover{
-                background-color: rgba(255,255,255, 0.7);
+                background: rgba(255,255,255, 0.7);
+                box-shadow: 0 0px 50px 0px rgba(185, 185, 185, 0.47);
                 transition: 0.3s;
                 cursor: pointer;
             }
     
             .image{
+                grid-area: i;
                 margin: 5px;
                 padding: 0px;
-                grid-area: i;
-                // border: 1px solid black;
-                // background-color:yellowgreen;
-                text-align: center;
-                //text-align: center will make one line text and images to come to the center of the div element
+                text-align: center;     //text-align: center will make one line text and images to come to the center of the div element
 
                 img{
                     max-width: 85px;
@@ -420,47 +403,42 @@ nav ul li a{
                 margin: 5px 0px 0px 0px;
                 padding: 0px;
                 grid-area: t;
-                // border: 1px solid black;
-                // background-color: teal;
-                text-align: center;
-                //text-align: center will make one line text and images to come to the center of the div element
+                text-align: center;     //text-align: center will make one line text and images to come to the center of the div element
                 font-size: 1rem;
-                font-weight: 600;
-                letter-spacing: 2px;
+                font-weight: 800;
+                letter-spacing: 3px;
+                color: #021347;
             }
             
-            .short_text
-            {
-                margin: 5px 0px 0px 0px;
+            .short_text{
+                margin: 10px 0px 0px 0px;
                 padding: 0px;
                 grid-area: s;
-                // border: 1px solid black;
-                // background-color: burlywood;
                 font-size: 0.75rem;
-                font-weight: 500;
+                font-weight: 300;
                 text-align: justify;
-    
+                color: rgb(26, 26, 26);
             }
         }
     }
 }
+
 @media (max-width: 1200px)
 {
-    .skills
-    {
-        padding: 0% 0%;
+    .skills{
+        padding: 7% 0%;
+        //When view port width is more than 1200px, if the left and right paddings are not 7%, 4 boxes will be arranged in the first row
     }
 }
-@media (max-width: 720px)
+
+@media (max-width: 700px)
 {
     .skills{
-        margin:0px; 
-        padding: 15px;
-        // border: 1px solid black;
-        background-color: rgb(0, 19, 128);
+        padding-top: 15vh;
+        padding-bottom: 10vh;
 
         h1{
-            padding: 20px 0px;
+            padding-bottom: 20px;
         }
         
         .container{
@@ -469,36 +447,28 @@ nav ul li a{
                 margin: 10px;
                 padding: 10px;
                 display: grid;
-                // grid-template-rows: 80px 15px 60px;
                 grid-template-areas: 
                 "t t t t t"
                 "s s s s i"
                 "s s s s i";
-                background: rgba(255, 255, 255, .7);
-                background: rgba( 253, 253, 255, 0.35 );
-                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-                backdrop-filter: blur(2.5px);
-                -webkit-backdrop-filter: blur(2.5px);
-                border-radius: 10px;
-                border: 1px solid rgba( 255, 255, 255, 0.18 );
                 width: 95%;
                 border-radius: 10px;
-        
+
+                //GLASSMORPHISM
+                box-shadow: 0 8px 15px 0 rgba( 31, 38, 135, 0.37 ); //Blur around the box for 15px
+                backdrop-filter: blur(.5px);
+                        
                 .image{
                     margin: 10px;
                     padding: 0px;
                     grid-area: i;
-                    // border: 1px solid black;
-                    // background-color:yellowgreen;
-                    text-align: center;
-                    //text-align: center will make one line text and images to come to the center of the div element
+                    text-align: center;    //text-align: center will make one line text and images to come to the center of the div element
                     align-self: center;
     
                     img{
                         width: 40px;
                         align-items: center;
                         justify-content: center;
-                        // Image is not centered vertically
                     }
                 }
         
@@ -506,10 +476,7 @@ nav ul li a{
                     margin:0px;
                     padding: 0px;
                     grid-area: t;
-                    // border: 1px solid black;
-                    // background-color: teal;
-                    text-align: center;
-                    //text-align: center will make one line text and images to come to the center of the div element
+                    text-align: center;  //text-align: center will make one line text and images to come to the center of the div element
                     font-size: 1rem;
                     font-weight: 600;
                     letter-spacing: 2px;
@@ -520,8 +487,6 @@ nav ul li a{
                     margin: 3px;
                     padding: 0px;
                     grid-area: s;
-                    // border: 1px solid black;
-                    // background-color: burlywood;
                     font-size: 0.75rem;
                     font-weight: 500;
                     text-align: justify;
@@ -536,56 +501,51 @@ nav ul li a{
 // A C C O M P L I S H M E N T S   S E C T I O N
 .accomp{
     padding: 7% 0%;
-    background-image: linear-gradient(to right, #4f00e3, #4919e8, 
-    #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6,
-    #613bf1, #7136ec, #7e31e7, #8a2be2);
-
-    //background-image: linear-gradient(to top, #000046, #001556, #002566, #003575, #004584, #005392, #00629f, #0071ab, #0082b9, #0093c7, #07a4d4, #1cb5e0);
+    background-image: linear-gradient(to right, #4f00e3, #4919e8, #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6, #613bf1, #7136ec, #7e31e7, #8a2be2);
     min-height: 100vh;
 
     h1{
-        // border: 1px solid black;
         text-align: center;
-        margin: 0px;
-        font-size: 1.25rem;
-        font-weight: bold;
+        font-size: 1.61rem; //in skills section, it is 1.75rem
+        margin-bottom: 3%;
+        font-weight: 700;
+        color: whitesmoke;
+        letter-spacing: 0.5px; //whereas in skills section, letter spacing for h1 is 5px
+        text-transform: uppercase;
     }
+
     .main_container{
-        // border: 1px solid black;
         margin: 0% 15%;
         padding: 0% 2% 2% 2%;
+        // border: 1px solid black;
 
         h3{
-            // border: 1px solid black;
             font-size: 1rem;
             font-weight: 900;
             margin: 45px 0px 10px 0px;
+            color: whitesmoke;
+            letter-spacing: 1px;
         }
 
-        .container
-        {
-            // border: 1px solid black;
-            margin: 0% 5%;
+        .container{
+            margin: 0% 4%;
             padding: 0%;
+            // border: 1px solid black;
 
             .sub_container{
-                // border: 1px solid black;
                 margin: 25px 0px;
                 display: grid;
                 grid-gap: 5px;
                 grid-template-rows: auto;
                 grid-template-columns: 0.75fr 0.75fr 6.5fr 1fr;
                 grid-template-areas: "i1 i2 t l";
-                border-radius: 15px;
+                border-radius: 8.5px;
                 transition: all ease 1.5s;
 
                 //Glassmorphism (for sub containers)
-                background: rgba( 255, 255, 255, 0.45 );
-                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-                backdrop-filter: blur( 0.0px );
-                -webkit-backdrop-filter: blur( 0.0px );
-                border-radius: 10px;
-                border: 1px solid rgba( 255, 255, 255, 0.18 );
+                background: rgba(255, 255, 255, 0.438);
+                box-shadow: 0px 0px 15px 2px rgba(13, 19, 105, 0.77);
+                backdrop-filter: blur(3px);
 
                 &:hover{
                     transform: scale(1.02);
@@ -593,7 +553,6 @@ nav ul li a{
                 }
 
                 .image1{
-                    // border: 1px solid black;
                     text-align: center;
                     grid-area: i1;
                     font-size: 0.5rem;
@@ -605,7 +564,6 @@ nav ul li a{
                     }
                 }
                 .image2{
-                    // border: 1px solid black;
                     grid-area: i2;
                     font-size: 0.5rem;
                     text-align: center;
@@ -618,39 +576,54 @@ nav ul li a{
                 }
                 .text
                 {
-                    // border: 1px solid black;
                     grid-area: t;
-                    font-size: 0.8rem;
                     align-self: center;
                     line-height: 1rem;
 
                     .h{
                         font-size: 0.9rem;
                         font-weight: 800;
-                        letter-spacing: 2px;
+                        letter-spacing: 1px;
+
+                        span{
+                            //The span element is inside the h element. In mobile screens, to improve the layout, this span element will not be displayed
+                            //But in desktop screens, span element gets the same styling as h element
+                            font-size: 0.9rem;
+                            font-weight: 800;
+                            letter-spacing: 1px;
+                        }
                     }
                     .p{
                         font-size: 0.65rem;
                         font-weight: 300;
                         letter-spacing: 0.5px;
+                        color: rgb(39, 39, 39);
+
+                        span{
+                            //The same reason as mentioned for the span inside .h
+                            font-size: 0.65rem;
+                            font-weight: 300;
+                            letter-spacing: 0.5px;
+                            color: rgb(39, 39, 39);
+                        }
                     }
                 }
                 .link
                 {
                     grid-area: l;
-                    font-size: 0.5rem;
                     align-self: center;
                     justify-self: center;
                     
                     a{
                         img{
-                            width: 30px;
+                            width: 22px;
                             transition: all ease 1s;
+                            align-self: center;
+                            justify-self: center;
                         }
                         img:hover
                         {
-                            transform: translateX(8px);
-                            // If the user hovers over the arrow, it will slide to the right by 8px
+                            transform: translateX(8px);   // If the user hovers over the arrow, it will slide to the right by 8px
                         }
                     }
                 }
@@ -664,9 +637,9 @@ nav ul li a{
     .accomp{
         background-color: pink;
         .main_container{
-            margin: 0% 3%;
-            .container1{
-                margin: 0% 0% 0% 4%;
+            margin: 0% 5%;
+            .container{
+                margin: 0% 4%;
             }
         }
     }
@@ -675,23 +648,21 @@ nav ul li a{
 @media (max-width: 800px)
 {
     .accomp{
-        background-color: lightblue;
         .main_container{
             .container{
-                margin: 0% 0% 0% 1%;
+                margin: 0% 4%;
                 .sub_container{
                     .text{
                         .h{
-                            font-family: san-serif;
                             font-size: 0.8rem;
-                            font-weight: bolder;
+                            font-weight: 900;
                             letter-spacing: 1px;
-                            color: brown;
                         }
                         .p{
-                            font-size: 0.6rem;
+                            font-size: 0.58rem;
                             letter-spacing: normal;
                             font-weight: 600px;
+                            font-weight: 200;
                         }
                     }
                 }
@@ -700,38 +671,44 @@ nav ul li a{
     }
 }
 
-@media (max-width: 500px)
+@media (max-width: 550px)
 {
     .accomp{
-        background-color: lightgreen;
+        padding-top: 15vh;
+        padding-bottom: 10vh;
         .main_container{
             .container{
-                margin: 0;
+                margin: 0%;
                 .sub_container{
-                    padding: 14px 6px;
-                    margin: 10px 0px;
-
-
+                    padding: 6px 6px;
+                    margin: 15px 0px;
 
                     .image1, .image2{
                         img{
                             width: 35px;
                         }
                     }
-
                     .text{
                         line-height: normal;
 
                         .h{
                             letter-spacing: normal;
+
+                            span{
+                                display: none;
+                            }
+                        }
+                        .p{
+                            span{
+                                display: none;
+                            }
                         }
                     }
                     .link{
                         img{
-                            width: 20px;
+                            width: 15px;
                         }
                     }
-
                 }
             }
         }
@@ -740,8 +717,6 @@ nav ul li a{
 
 
 //C O N T A C T   D E T A I L S
-
-
 .contact{
     background-image: linear-gradient(to bottom, #1c075e, #20086b, #240979, #290a87, #2d0b95);
     padding: 4% 2%;
@@ -751,28 +726,25 @@ nav ul li a{
         font-size: 1.15rem;
         font-weight: 700;
         letter-spacing: 3px;
-        color: cornflowerblue;
+        color: rgb(93, 132, 184);
         text-align: center;
+        margin-bottom: 5vh;
     }
     .main_container{
-        // border: 1px solid white;
-        // margin: 0px 0px 30px 0px;
         display: flex;
         justify-content: space-between;
+        margin: 0;
 
         .container1{
-            // border: 1px solid white;
             margin: 0px 0px 0px 3%;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
 
             .info{
-                // border: 1px solid white;
                 margin: 5px;
                 transition: all ease 2s;
-                display: flex;
-                //flex to just align the image and text vertically to the center
+                display: flex;           //flex to just align the image and text vertically to the center
 
                 &:hover{
                     transform: scaleX(1.03);
@@ -786,21 +758,18 @@ nav ul li a{
                 img{
                     width: 20px;
                     align-self: center;
-                    // justify-self: center;
                     margin: 5px;
-                    filter: invert(100%);
+                    filter: invert(100%);      //The original image is black, to convert it to white, invert filter is used.
                 }
 
                 span{
                     font-size: 0.9rem;
-                    // border: 1px solid white;
                     margin: 5px;
                     color: whitesmoke;
-                    }
+                }
             }
         }
         .container2{
-            // border: 1px solid white;
             margin: 0% 3% 0% 0%;
 
             .link{
@@ -820,15 +789,15 @@ nav ul li a{
                 }
             }
         }
-
     }
 }
 
-@media (max-width: 750px)
+@media (max-width: 700px)
 {
     .contact{
+        padding: 4% 2.5% 12% 2.5%;
         h1{
-            font-size: 1rem;
+            font-size: 1.05rem;
         }
         .main_container{
             .container1{
@@ -842,14 +811,13 @@ nav ul li a{
     }
 }
 
-@media (max-width: 530px)
+@media (max-width: 550px)
 {
     .contact{
         h1{
             font-size: 0.9rem;
         }
         .main_container{
-            margin: 0px 0px 60px 0px;
             .container1{
                 .info{
                     span{
