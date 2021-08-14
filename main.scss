@@ -346,6 +346,7 @@ nav ul li a{
     //1 vh = (1/100)(height of viewport)    //So 100vh == height of the entire screen   //Similarly 1vw = (1/100)(width of viewport)
     padding: 7% 7%;
     background-image: linear-gradient(to right, #4f00e3bd, #4919e8bd, #4126edbd, #3931f2bd, #303af6bd, #3b3cf6bd, #453df6bd, #4d3ff6bd, #613bf1bd, #7136ecbd, #7e31e7bd, #8a2be2bd);
+    background-image: linear-gradient(to left, #4f00e3, #4919e8, #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6, #613bf1, #7136ec, #7e31e7, #8a2be2);
 
     h1{
         text-align: center;
@@ -374,7 +375,7 @@ nav ul li a{
             "s s s s s";
             width: 270px;
             border-radius: 20px;
-            transition: 1.5s;
+            transition: 2.5s;
 
             //glassmorphism
             background: rgba( 225, 225, 225, 0.20 );
@@ -393,6 +394,7 @@ nav ul li a{
                 margin: 5px;
                 padding: 0px;
                 text-align: center;     //text-align: center will make one line text and images to come to the center of the div element
+                // filter: contrast(130%);
 
                 img{
                     max-width: 85px;
@@ -561,6 +563,7 @@ nav ul li a{
                     img{
                         width: 50px;
                         margin: 5px;
+                        filter: contrast(150%);
                     }
                 }
                 .image2{
@@ -572,6 +575,7 @@ nav ul li a{
                     img{
                         width: 50px;
                         margin: 5px;
+                        filter: contrast(130%);
                     }
                 }
                 .text
@@ -620,6 +624,7 @@ nav ul li a{
                             transition: all ease 1s;
                             align-self: center;
                             justify-self: center;
+                            filter: opacity(80%);
                         }
                         img:hover
                         {
@@ -705,8 +710,11 @@ nav ul li a{
                         }
                     }
                     .link{
-                        img{
-                            width: 15px;
+                        a{
+                            img{
+                                width: 15px;
+                                transform: none;
+                            }
                         }
                     }
                 }
@@ -836,5 +844,19 @@ nav ul li a{
                 }
             }
         }
+    }
+}
+
+
+footer{
+    background-color: #1c075e;
+    background-image: linear-gradient(to right, #4f00e3, #4919e8, #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6, #613bf1, #7136ec, #7e31e7, #8a2be2);
+    padding: 3px 0px;
+    p{
+        font-size: 0.65rem;
+        letter-spacing: 1px;
+        font-weight: 600;
+        text-align: center;
+        color: black;
     }
 }

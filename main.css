@@ -378,6 +378,8 @@ nav ul li a {
   padding: 7% 7%;
   background-image: -webkit-gradient(linear, left top, right top, from(#4f00e3bd), color-stop(#4919e8bd), color-stop(#4126edbd), color-stop(#3931f2bd), color-stop(#303af6bd), color-stop(#3b3cf6bd), color-stop(#453df6bd), color-stop(#4d3ff6bd), color-stop(#613bf1bd), color-stop(#7136ecbd), color-stop(#7e31e7bd), to(#8a2be2bd));
   background-image: linear-gradient(to right, #4f00e3bd, #4919e8bd, #4126edbd, #3931f2bd, #303af6bd, #3b3cf6bd, #453df6bd, #4d3ff6bd, #613bf1bd, #7136ecbd, #7e31e7bd, #8a2be2bd);
+  background-image: -webkit-gradient(linear, right top, left top, from(#4f00e3), color-stop(#4919e8), color-stop(#4126ed), color-stop(#3931f2), color-stop(#303af6), color-stop(#3b3cf6), color-stop(#453df6), color-stop(#4d3ff6), color-stop(#613bf1), color-stop(#7136ec), color-stop(#7e31e7), to(#8a2be2));
+  background-image: linear-gradient(to left, #4f00e3, #4919e8, #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6, #613bf1, #7136ec, #7e31e7, #8a2be2);
 }
 
 .skills h1 {
@@ -413,8 +415,8 @@ nav ul li a {
       grid-template-areas: "i i i i i" "t t t t t" "s s s s s";
   width: 270px;
   border-radius: 20px;
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
+  -webkit-transition: 2.5s;
+  transition: 2.5s;
   background: rgba(225, 225, 225, 0.2);
   -webkit-box-shadow: 0 0px 35px 2px rgba(31, 38, 135, 0.77);
           box-shadow: 0 0px 35px 2px rgba(31, 38, 135, 0.77);
@@ -623,6 +625,8 @@ nav ul li a {
 .accomp .main_container .container .sub_container .image1 img {
   width: 50px;
   margin: 5px;
+  -webkit-filter: contrast(150%);
+          filter: contrast(150%);
 }
 
 .accomp .main_container .container .sub_container .image2 {
@@ -639,6 +643,8 @@ nav ul li a {
 .accomp .main_container .container .sub_container .image2 img {
   width: 50px;
   margin: 5px;
+  -webkit-filter: contrast(130%);
+          filter: contrast(130%);
 }
 
 .accomp .main_container .container .sub_container .text {
@@ -697,6 +703,8 @@ nav ul li a {
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
+  -webkit-filter: opacity(80%);
+          filter: opacity(80%);
 }
 
 .accomp .main_container .container .sub_container .link a img:hover {
@@ -760,8 +768,10 @@ nav ul li a {
   .accomp .main_container .container .sub_container .text .p span {
     display: none;
   }
-  .accomp .main_container .container .sub_container .link img {
+  .accomp .main_container .container .sub_container .link a img {
     width: 15px;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 
@@ -885,5 +895,20 @@ nav ul li a {
     -webkit-filter: grayscale(0%);
             filter: grayscale(0%);
   }
+}
+
+footer {
+  background-color: #1c075e;
+  background-image: -webkit-gradient(linear, left top, right top, from(#4f00e3), color-stop(#4919e8), color-stop(#4126ed), color-stop(#3931f2), color-stop(#303af6), color-stop(#3b3cf6), color-stop(#453df6), color-stop(#4d3ff6), color-stop(#613bf1), color-stop(#7136ec), color-stop(#7e31e7), to(#8a2be2));
+  background-image: linear-gradient(to right, #4f00e3, #4919e8, #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6, #613bf1, #7136ec, #7e31e7, #8a2be2);
+  padding: 3px 0px;
+}
+
+footer p {
+  font-size: 0.65rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-align: center;
+  color: black;
 }
 /*# sourceMappingURL=main.css.map */
