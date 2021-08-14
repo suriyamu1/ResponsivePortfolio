@@ -106,14 +106,12 @@ nav ul li a {
   ul {
     position: fixed;
     width: 100%;
-    max-height: 46vh;
-    background: #2c3e50;
+    height: 40vh;
     top: 8vh;
     left: -100%;
     text-align: center;
     -webkit-transition: all .5s;
     transition: all .5s;
-    background-color: #010e36;
     z-index: 10;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -122,11 +120,14 @@ nav ul li a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 15% 0%;
+    padding: 3% 0%;
+    background-color: #010e3696;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
   }
   nav ul li {
     display: block;
-    margin: 10px 0;
+    margin: 5px 0;
     height: 6vh;
     line-height: 30px;
   }
@@ -135,7 +136,7 @@ nav ul li a {
     letter-spacing: 1.5px;
   }
   a:hover, a.active {
-    background-color: #010e36;
+    background-color: transparent;
   }
   #check:checked ~ ul {
     left: 0;
@@ -614,6 +615,7 @@ nav ul li a {
           transform: scale(1.02);
   -webkit-transition: all ease 1s;
   transition: all ease 1s;
+  background-color: rgba(255, 255, 255, 0.638);
 }
 
 .accomp .main_container .container .sub_container .image1 {
