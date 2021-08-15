@@ -827,19 +827,57 @@ nav ul li a {
 .contact .main_container .container2 .link a img {
   width: 35px;
   margin: 5px 0px;
-  -webkit-filter: grayscale(65%);
-          filter: grayscale(65%);
   -webkit-transition: all ease 1s;
   transition: all ease 1s;
+  -webkit-animation: beats 2.5s infinite ease-in-out;
+          animation: beats 2.5s infinite ease-in-out;
 }
 
 .contact .main_container .container2 .link a img:hover {
   -webkit-filter: grayscale(0%);
           filter: grayscale(0%);
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-animation: none;
+          animation: none;
   -webkit-transition: all ease 1s;
   transition: all ease 1s;
+}
+
+@-webkit-keyframes beats {
+  0% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    opacity: 0.7;
+  }
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0.7;
+  }
+}
+
+@keyframes beats {
+  0% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    opacity: 0.7;
+  }
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0.7;
+  }
 }
 
 @media (max-width: 700px) {
