@@ -144,6 +144,7 @@ nav ul li a {
 }
 
 .intro {
+  padding: 10vh 4vw;
   background-image: -webkit-gradient(linear, left top, right top, from(#4f00e3), color-stop(#4919e8), color-stop(#4126ed), color-stop(#3931f2), color-stop(#303af6), color-stop(#3b3cf6), color-stop(#453df6), color-stop(#4d3ff6), color-stop(#613bf1), color-stop(#7136ec), color-stop(#7e31e7), to(#8a2be2));
   background-image: linear-gradient(to right, #4f00e3, #4919e8, #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6, #613bf1, #7136ec, #7e31e7, #8a2be2);
   min-height: 100vh;
@@ -152,7 +153,6 @@ nav ul li a {
   -ms-grid-rows: 1fr;
   -ms-grid-columns: 2fr 1.5fr;
       grid-template: 1fr / 2fr 1.5fr;
-  padding: 0% 5% 7% 5%;
       grid-template-areas: "c1 c2";
 }
 
@@ -173,19 +173,20 @@ nav ul li a {
 }
 
 .intro .container1 .sub-container1 {
-  margin: 25% 0% 5% 0%;
-  min-height: 50%;
+  margin: 10% 0% 5% 0%;
+  min-height: 30%;
 }
 
 .intro .container1 .sub-container1 h1 {
   font-family: Rokkitt, sans-serif;
-  margin: 15% 0%;
+  margin-bottom: 15%;
   font-size: 1.3rem;
   letter-spacing: 2px;
-  margin: 1em 0em;
+  margin: 0.7em 0em;
 }
 
 .intro .container1 .sub-container1 h1 span {
+  font-family: Rokkitt, sans-serif;
   color: whitesmoke;
   font-size: 2rem;
 }
@@ -201,24 +202,26 @@ nav ul li a {
   margin: 5% 0%;
 }
 
-.intro .container1 .sub-container1 .resume .res_btn {
-  font-family: Rokkitt, Arial, Helvetica, sans-serif;
+.intro .container1 .sub-container1 .resume a {
+  font-family: Rokkitt, sans-serif;
   margin: 0px 0px;
   font-size: 0.85rem;
   font-weight: 600;
   padding: 0.5em 1em;
-  color: #2b2b2b;
+  color: #0c0c0c;
   text-decoration: none;
   border-radius: 1em;
   letter-spacing: 1px;
-  -webkit-animation: colour_change 3s infinite;
-          animation: colour_change 3s infinite;
+  background-image: -webkit-gradient(linear, left top, right top, from(#eb125d), color-stop(#e52090), color-stop(#c944c0), color-stop(#9364e7), to(#0c7dfe));
+  background-image: linear-gradient(to right, #eb125d, #e52090, #c944c0, #9364e7, #0c7dfe);
+  -webkit-transition: 2s all;
+  transition: 2s all;
+  -webkit-box-shadow: 0px 0px 10px #1d055f;
+          box-shadow: 0px 0px 10px #1d055f;
 }
 
-.intro .container1 .sub-container1 .resume .res_btn:hover {
-  opacity: 100%;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+.intro .container1 .sub-container1 .resume:hover {
+  color: white;
 }
 
 .intro .container1 .sub-container2 {
@@ -269,50 +272,8 @@ nav ul li a {
   border-radius: 50%;
   -webkit-filter: grayscale(100%) opacity(75%);
           filter: grayscale(100%) opacity(75%);
-}
-
-@-webkit-keyframes colour_change {
-  0% {
-    background-image: -webkit-gradient(linear, left top, right top, from(#eb125d), color-stop(#e5419e), color-stop(#c66bd3), color-stop(#958ef4), color-stop(#5da9ff), color-stop(#44b3ff), color-stop(#28bcff), color-stop(#0cc5fe), color-stop(#0cc5fe), color-stop(#0cc5fe), color-stop(#0cc5fe), to(#0cc5fe));
-    background-image: linear-gradient(to right, #eb125d, #e5419e, #c66bd3, #958ef4, #5da9ff, #44b3ff, #28bcff, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe);
-    opacity: 80%;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    opacity: 100%;
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-  }
-  100% {
-    background-image: -webkit-gradient(linear, left top, right top, from(#eb125d), color-stop(#e5419e), color-stop(#c66bd3), color-stop(#958ef4), color-stop(#5da9ff), color-stop(#44b3ff), color-stop(#28bcff), color-stop(#0cc5fe), color-stop(#0cc5fe), color-stop(#0cc5fe), color-stop(#0cc5fe), to(#0cc5fe));
-    background-image: linear-gradient(to right, #eb125d, #e5419e, #c66bd3, #958ef4, #5da9ff, #44b3ff, #28bcff, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe);
-    opacity: 80%;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes colour_change {
-  0% {
-    background-image: -webkit-gradient(linear, left top, right top, from(#eb125d), color-stop(#e5419e), color-stop(#c66bd3), color-stop(#958ef4), color-stop(#5da9ff), color-stop(#44b3ff), color-stop(#28bcff), color-stop(#0cc5fe), color-stop(#0cc5fe), color-stop(#0cc5fe), color-stop(#0cc5fe), to(#0cc5fe));
-    background-image: linear-gradient(to right, #eb125d, #e5419e, #c66bd3, #958ef4, #5da9ff, #44b3ff, #28bcff, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe);
-    opacity: 80%;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    opacity: 100%;
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-  }
-  100% {
-    background-image: -webkit-gradient(linear, left top, right top, from(#eb125d), color-stop(#e5419e), color-stop(#c66bd3), color-stop(#958ef4), color-stop(#5da9ff), color-stop(#44b3ff), color-stop(#28bcff), color-stop(#0cc5fe), color-stop(#0cc5fe), color-stop(#0cc5fe), color-stop(#0cc5fe), to(#0cc5fe));
-    background-image: linear-gradient(to right, #eb125d, #e5419e, #c66bd3, #958ef4, #5da9ff, #44b3ff, #28bcff, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe, #0cc5fe);
-    opacity: 80%;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
+  -webkit-box-shadow: 0px 0px 20px 0px blue;
+          box-shadow: 0px 0px 20px 0px blue;
 }
 
 @media (max-width: 900px) {
@@ -343,7 +304,7 @@ nav ul li a {
   }
   .intro .container2 {
     width: 55%;
-    margin-top: 20%;
+    margin-top: 10%;
   }
   .intro .container2 img {
     border-radius: 50%;
@@ -355,7 +316,7 @@ nav ul li a {
     margin: 0%;
   }
   .intro .container1 .sub-container1 h1 {
-    margin: 2% 0%;
+    margin-bottom: 2% 0%;
     font-size: 1.1rem;
   }
   .intro .container1 .sub-container1 h1 span {
@@ -364,7 +325,7 @@ nav ul li a {
   .intro .container1 .sub-container1 p {
     font-size: 0.8rem;
     font-weight: 350px;
-    margin: 0% 0%;
+    margin: 5% 1% 0% 0%;
   }
   .intro .container1 .sub-container1 a {
     font-size: 0.7rem;
@@ -590,6 +551,10 @@ nav ul li a {
   padding: 0%;
 }
 
+.accomp .main_container .container .no_link .link {
+  display: none;
+}
+
 .accomp .main_container .container .sub_container {
   margin: 25px 0px;
   display: -ms-grid;
@@ -720,9 +685,6 @@ nav ul li a {
 }
 
 @media (max-width: 1000px) {
-  .accomp {
-    background-color: pink;
-  }
   .accomp .main_container {
     margin: 0% 5%;
   }
@@ -777,8 +739,10 @@ nav ul li a {
   }
   .accomp .main_container .container .sub_container .link a img {
     width: 15px;
-    -webkit-transform: none;
-            transform: none;
+  }
+  .accomp .main_container .container .sub_container .link a img:hover {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
