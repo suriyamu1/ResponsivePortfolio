@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@351&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -145,8 +145,8 @@ nav ul li a {
 
 .intro {
   padding: 10vh 4vw;
-  background-image: -webkit-gradient(linear, left top, right top, from(#4f00e3), color-stop(#4919e8), color-stop(#4126ed), color-stop(#3931f2), color-stop(#303af6), color-stop(#3b3cf6), color-stop(#453df6), color-stop(#4d3ff6), color-stop(#613bf1), color-stop(#7136ec), color-stop(#7e31e7), to(#8a2be2));
-  background-image: linear-gradient(to right, #4f00e3, #4919e8, #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6, #613bf1, #7136ec, #7e31e7, #8a2be2);
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#2153d9), color-stop(#4168e2), color-stop(#5a7cea), color-stop(#7291f1), color-stop(#89a5f7), color-stop(#8da2f3), color-stop(#919fee), color-stop(#959cea), color-stop(#8c81d8), color-stop(#8664c3), color-stop(#8345ab), to(#7f1d90));
+  background-image: linear-gradient(to left bottom, #2153d9, #4168e2, #5a7cea, #7291f1, #89a5f7, #8da2f3, #919fee, #959cea, #8c81d8, #8664c3, #8345ab, #7f1d90);
   min-height: 100vh;
   display: -ms-grid;
   display: grid;
@@ -212,8 +212,8 @@ nav ul li a {
   text-decoration: none;
   border-radius: 1em;
   letter-spacing: 1px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#eb125d), color-stop(#e52090), color-stop(#c944c0), color-stop(#9364e7), to(#0c7dfe));
-  background-image: linear-gradient(to right, #eb125d, #e52090, #c944c0, #9364e7, #0c7dfe);
+  background-image: -webkit-gradient(linear, left top, right top, from(#eb125d), to(#0c7dfe));
+  background-image: linear-gradient(to right, #eb125d, #0c7dfe);
   -webkit-transition: 2s all;
   transition: 2s all;
   -webkit-box-shadow: 0px 0px 10px #1d055f;
@@ -268,7 +268,7 @@ nav ul li a {
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
-  width: 100%;
+  width: 90%;
   border-radius: 50%;
   -webkit-filter: grayscale(100%) opacity(75%);
           filter: grayscale(100%) opacity(75%);
@@ -338,10 +338,8 @@ nav ul li a {
 .skills {
   min-height: 100vh;
   padding: 7% 7%;
-  background-image: -webkit-gradient(linear, left top, right top, from(#4f00e3bd), color-stop(#4919e8bd), color-stop(#4126edbd), color-stop(#3931f2bd), color-stop(#303af6bd), color-stop(#3b3cf6bd), color-stop(#453df6bd), color-stop(#4d3ff6bd), color-stop(#613bf1bd), color-stop(#7136ecbd), color-stop(#7e31e7bd), to(#8a2be2bd));
-  background-image: linear-gradient(to right, #4f00e3bd, #4919e8bd, #4126edbd, #3931f2bd, #303af6bd, #3b3cf6bd, #453df6bd, #4d3ff6bd, #613bf1bd, #7136ecbd, #7e31e7bd, #8a2be2bd);
-  background-image: -webkit-gradient(linear, right top, left top, from(#4f00e3), color-stop(#4919e8), color-stop(#4126ed), color-stop(#3931f2), color-stop(#303af6), color-stop(#3b3cf6), color-stop(#453df6), color-stop(#4d3ff6), color-stop(#613bf1), color-stop(#7136ec), color-stop(#7e31e7), to(#8a2be2));
-  background-image: linear-gradient(to left, #4f00e3, #4919e8, #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6, #613bf1, #7136ec, #7e31e7, #8a2be2);
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#2153d9), color-stop(#4168e2), color-stop(#5a7cea), color-stop(#7291f1), color-stop(#89a5f7), color-stop(#8da2f3), color-stop(#919fee), color-stop(#959cea), color-stop(#8c81d8), color-stop(#8664c3), color-stop(#8345ab), to(#7f1d90));
+  background-image: linear-gradient(to left bottom, #2153d9, #4168e2, #5a7cea, #7291f1, #89a5f7, #8da2f3, #919fee, #959cea, #8c81d8, #8664c3, #8345ab, #7f1d90);
 }
 
 .skills h1 {
@@ -518,8 +516,8 @@ nav ul li a {
 
 .accomp {
   padding: 7% 0%;
-  background-image: -webkit-gradient(linear, left top, right top, from(#4f00e3), color-stop(#4919e8), color-stop(#4126ed), color-stop(#3931f2), color-stop(#303af6), color-stop(#3b3cf6), color-stop(#453df6), color-stop(#4d3ff6), color-stop(#613bf1), color-stop(#7136ec), color-stop(#7e31e7), to(#8a2be2));
-  background-image: linear-gradient(to right, #4f00e3, #4919e8, #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6, #613bf1, #7136ec, #7e31e7, #8a2be2);
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#2153d9), color-stop(#4168e2), color-stop(#5a7cea), color-stop(#7291f1), color-stop(#89a5f7), color-stop(#8da2f3), color-stop(#919fee), color-stop(#959cea), color-stop(#8c81d8), color-stop(#8664c3), color-stop(#8345ab), to(#7f1d90));
+  background-image: linear-gradient(to left bottom, #2153d9, #4168e2, #5a7cea, #7291f1, #89a5f7, #8da2f3, #919fee, #959cea, #8c81d8, #8664c3, #8345ab, #7f1d90);
   min-height: 100vh;
 }
 
@@ -907,6 +905,7 @@ nav ul li a {
 }
 
 footer {
+  font-family: Rokkitt, sans-serif;
   background-color: #1c075e;
   background-image: -webkit-gradient(linear, left top, right top, from(#4f00e3), color-stop(#4919e8), color-stop(#4126ed), color-stop(#3931f2), color-stop(#303af6), color-stop(#3b3cf6), color-stop(#453df6), color-stop(#4d3ff6), color-stop(#613bf1), color-stop(#7136ec), color-stop(#7e31e7), to(#8a2be2));
   background-image: linear-gradient(to right, #4f00e3, #4919e8, #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6, #613bf1, #7136ec, #7e31e7, #8a2be2);

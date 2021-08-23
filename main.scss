@@ -1,9 +1,6 @@
-//FONTS
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@700&display=swap'); //Crimson Pro FOnt
-@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@351&display=swap'); //Rokkitt Font
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@351&display=swap'); //Rokkitt Font for h1 in intro section
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@700&display=swap'); //Crimson Pro Font for the remaining typography
 
-//Rokkitt for logo and name in intro section
-//Crimson Pro for other typography
 
 *{
     margin: 0;
@@ -17,11 +14,9 @@
 html
 {
     scroll-behavior: smooth;
-    // smooth scrolling effects for navigation bar
 }
 
 //1.  N A V I G A T I O N  B A R
-//Css Code
 
 nav{
     position: fixed;
@@ -148,9 +143,9 @@ nav ul li a{
 // I N T R O   S E C T I O N
 
 
-.intro{ //this code is working fine for >=1000px
+.intro{
     padding: 10vh 4vw;
-    background-image: linear-gradient(to right, #4f00e3, #4919e8, #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6, #613bf1, #7136ec, #7e31e7, #8a2be2);
+    background-image: linear-gradient(to left bottom, #2153d9, #4168e2, #5a7cea, #7291f1, #89a5f7, #8da2f3, #919fee, #959cea, #8c81d8, #8664c3, #8345ab, #7f1d90);
     min-height: 100vh;               //to make this section fill the whole screen if it is smaller than 100vh
     display: grid;                   //Used grid (grid-template-areas) to position the c2 container on top of c1 in mobile screens
     grid-template: 1fr / 2fr 1.5fr;  //1 row and two columns (2 : 1.5)
@@ -203,7 +198,7 @@ nav ul li a{
                     text-decoration: none;
                     border-radius: 1em;
                     letter-spacing: 1px;
-                    background-image: linear-gradient(to right, #eb125d, #e52090, #c944c0, #9364e7, #0c7dfe);
+                    background-image: linear-gradient(to right, #eb125d, #0c7dfe);
                     transition: 2s all;
                     box-shadow: 0px 0px 10px rgb(29, 5, 95);
                 }
@@ -224,8 +219,7 @@ nav ul li a{
                 width: 25px;
                 transition: all ease 1s;
                 
-                &:hover{
-                    //&:hover == img:hover
+                &:hover{        //&:hover == img:hover
                     transform: translateY(-10px); //the icons moves up when user hovers over it
                     transition: all ease 1s;
                 }
@@ -244,25 +238,14 @@ nav ul li a{
         img{
             align-self: center;
             justify-self: center;
-            width: 100%;     //100% of the parent element (container 2)
+            width: 90%;     //100% of the parent element (container 2)
+            // height: 100%;
             border-radius: 50%;
             filter: grayscale(100%) opacity(75%);
             box-shadow: 0px 0px 20px 0px blue;
         }
     }
 }
-
-// @keyframes colour_change{
-//     0%{
-//         background-position: 0 50%;
-//     }
-//     50%{
-//         background-position: 100% 50%;
-//     }
-//     100%{
-//         background-position: 0 50%;
-//     }
-// }
 
 @media (max-width: 900px){
     .intro{
@@ -327,9 +310,7 @@ nav ul li a{
     min-height: 100vh;
     //1 vh = (1/100)(height of viewport)    //So 100vh == height of the entire screen   //Similarly 1vw = (1/100)(width of viewport)
     padding: 7% 7%;
-    background-image: linear-gradient(to right, #4f00e3bd, #4919e8bd, #4126edbd, #3931f2bd, #303af6bd, #3b3cf6bd, #453df6bd, #4d3ff6bd, #613bf1bd, #7136ecbd, #7e31e7bd, #8a2be2bd);
-    background-image: linear-gradient(to left, #4f00e3, #4919e8, #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6, #613bf1, #7136ec, #7e31e7, #8a2be2);
-
+    background-image: linear-gradient(to left bottom, #2153d9, #4168e2, #5a7cea, #7291f1, #89a5f7, #8da2f3, #919fee, #959cea, #8c81d8, #8664c3, #8345ab, #7f1d90);
     h1{
         text-align: center;
         font-size: 1.75rem;
@@ -380,7 +361,6 @@ nav ul li a{
                 margin: 5px;
                 padding: 0px;
                 text-align: center;     //text-align: center will make one line text and images to come to the center of the div element
-                // filter: contrast(130%);
 
                 img{
                     max-width: 85px;
@@ -489,7 +469,7 @@ nav ul li a{
 // A C C O M P L I S H M E N T S   S E C T I O N
 .accomp{
     padding: 7% 0%;
-    background-image: linear-gradient(to right, #4f00e3, #4919e8, #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6, #613bf1, #7136ec, #7e31e7, #8a2be2);
+    background-image: linear-gradient(to left bottom, #2153d9, #4168e2, #5a7cea, #7291f1, #89a5f7, #8da2f3, #919fee, #959cea, #8c81d8, #8664c3, #8345ab, #7f1d90);
     min-height: 100vh;
 
     h1{
@@ -723,8 +703,7 @@ nav ul li a{
 //C O N T A C T   D E T A I L S
 .contact{
     background-image: linear-gradient(to bottom, #1c075e, #20086b, #240979, #290a87, #2d0b95);
-    padding: 4% 2%;
-    
+    padding: 4% 2%;  
     
     h1{
         font-size: 1.15rem;
@@ -862,6 +841,7 @@ nav ul li a{
 
 
 footer{
+    font-family: Rokkitt, sans-serif;
     background-color: #1c075e;
     background-image: linear-gradient(to right, #4f00e3, #4919e8, #4126ed, #3931f2, #303af6, #3b3cf6, #453df6, #4d3ff6, #613bf1, #7136ec, #7e31e7, #8a2be2);
     padding: 3px 0px;
