@@ -147,6 +147,8 @@ nav ul li a {
   padding: 10vh 4vw;
   background-image: -webkit-gradient(linear, right top, left bottom, from(#2153d9), color-stop(#4168e2), color-stop(#5a7cea), color-stop(#7291f1), color-stop(#89a5f7), color-stop(#8da2f3), color-stop(#919fee), color-stop(#959cea), color-stop(#8c81d8), color-stop(#8664c3), color-stop(#8345ab), to(#7f1d90));
   background-image: linear-gradient(to left bottom, #2153d9, #4168e2, #5a7cea, #7291f1, #89a5f7, #8da2f3, #919fee, #959cea, #8c81d8, #8664c3, #8345ab, #7f1d90);
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#2153d9), color-stop(#4168e2), color-stop(#5a7cea), color-stop(#7291f1), color-stop(#89a5f7), color-stop(#89a5f7), color-stop(#89a5f7), color-stop(#89a5f7), color-stop(#7291f1), color-stop(#5a7cea), color-stop(#4168e2), to(#2153d9));
+  background-image: linear-gradient(to left bottom, #2153d9, #4168e2, #5a7cea, #7291f1, #89a5f7, #89a5f7, #89a5f7, #89a5f7, #7291f1, #5a7cea, #4168e2, #2153d9);
   min-height: 100vh;
   display: -ms-grid;
   display: grid;
@@ -340,6 +342,8 @@ nav ul li a {
   padding: 7% 7%;
   background-image: -webkit-gradient(linear, right top, left bottom, from(#2153d9), color-stop(#4168e2), color-stop(#5a7cea), color-stop(#7291f1), color-stop(#89a5f7), color-stop(#8da2f3), color-stop(#919fee), color-stop(#959cea), color-stop(#8c81d8), color-stop(#8664c3), color-stop(#8345ab), to(#7f1d90));
   background-image: linear-gradient(to left bottom, #2153d9, #4168e2, #5a7cea, #7291f1, #89a5f7, #8da2f3, #919fee, #959cea, #8c81d8, #8664c3, #8345ab, #7f1d90);
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#2153d9), color-stop(#4168e2), color-stop(#5a7cea), color-stop(#7291f1), color-stop(#89a5f7), color-stop(#89a5f7), color-stop(#89a5f7), color-stop(#89a5f7), color-stop(#7291f1), color-stop(#5a7cea), color-stop(#4168e2), to(#2153d9));
+  background-image: linear-gradient(to left bottom, #2153d9, #4168e2, #5a7cea, #7291f1, #89a5f7, #89a5f7, #89a5f7, #89a5f7, #7291f1, #5a7cea, #4168e2, #2153d9);
 }
 
 .skills h1 {
@@ -518,6 +522,8 @@ nav ul li a {
   padding: 7% 0%;
   background-image: -webkit-gradient(linear, right top, left bottom, from(#2153d9), color-stop(#4168e2), color-stop(#5a7cea), color-stop(#7291f1), color-stop(#89a5f7), color-stop(#8da2f3), color-stop(#919fee), color-stop(#959cea), color-stop(#8c81d8), color-stop(#8664c3), color-stop(#8345ab), to(#7f1d90));
   background-image: linear-gradient(to left bottom, #2153d9, #4168e2, #5a7cea, #7291f1, #89a5f7, #8da2f3, #919fee, #959cea, #8c81d8, #8664c3, #8345ab, #7f1d90);
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#2153d9), color-stop(#4168e2), color-stop(#5a7cea), color-stop(#7291f1), color-stop(#89a5f7), color-stop(#89a5f7), color-stop(#89a5f7), color-stop(#89a5f7), color-stop(#7291f1), color-stop(#5a7cea), color-stop(#4168e2), to(#2153d9));
+  background-image: linear-gradient(to left bottom, #2153d9, #4168e2, #5a7cea, #7291f1, #89a5f7, #89a5f7, #89a5f7, #89a5f7, #7291f1, #5a7cea, #4168e2, #2153d9);
   min-height: 100vh;
 }
 

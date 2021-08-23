@@ -146,6 +146,7 @@ nav ul li a{
 .intro{
     padding: 10vh 4vw;
     background-image: linear-gradient(to left bottom, #2153d9, #4168e2, #5a7cea, #7291f1, #89a5f7, #8da2f3, #919fee, #959cea, #8c81d8, #8664c3, #8345ab, #7f1d90);
+    background-image: linear-gradient(to left bottom, #2153d9, #4168e2, #5a7cea, #7291f1, #89a5f7, #89a5f7, #89a5f7, #89a5f7, #7291f1, #5a7cea, #4168e2, #2153d9);
     min-height: 100vh;               //to make this section fill the whole screen if it is smaller than 100vh
     display: grid;                   //Used grid (grid-template-areas) to position the c2 container on top of c1 in mobile screens
     grid-template: 1fr / 2fr 1.5fr;  //1 row and two columns (2 : 1.5)
@@ -311,6 +312,7 @@ nav ul li a{
     //1 vh = (1/100)(height of viewport)    //So 100vh == height of the entire screen   //Similarly 1vw = (1/100)(width of viewport)
     padding: 7% 7%;
     background-image: linear-gradient(to left bottom, #2153d9, #4168e2, #5a7cea, #7291f1, #89a5f7, #8da2f3, #919fee, #959cea, #8c81d8, #8664c3, #8345ab, #7f1d90);
+    background-image: linear-gradient(to left bottom, #2153d9, #4168e2, #5a7cea, #7291f1, #89a5f7, #89a5f7, #89a5f7, #89a5f7, #7291f1, #5a7cea, #4168e2, #2153d9);
     h1{
         text-align: center;
         font-size: 1.75rem;
@@ -470,6 +472,7 @@ nav ul li a{
 .accomp{
     padding: 7% 0%;
     background-image: linear-gradient(to left bottom, #2153d9, #4168e2, #5a7cea, #7291f1, #89a5f7, #8da2f3, #919fee, #959cea, #8c81d8, #8664c3, #8345ab, #7f1d90);
+    background-image: linear-gradient(to left bottom, #2153d9, #4168e2, #5a7cea, #7291f1, #89a5f7, #89a5f7, #89a5f7, #89a5f7, #7291f1, #5a7cea, #4168e2, #2153d9);
     min-height: 100vh;
 
     h1{
