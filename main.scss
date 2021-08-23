@@ -770,7 +770,7 @@ nav ul li a{
 
                         &:hover{
                             filter: grayscale(0%);
-                            transform: scale(1.15);
+                            transform: scale(1.05);
                             animation: none;
                             transition: all ease 1s;
                         }
@@ -787,7 +787,7 @@ nav ul li a{
         opacity: 0.7;
     }
     50%{
-        transform: scale(1.05);
+        transform: scale(1.02);
         opacity: 1;
     }
     100%{
